@@ -1,7 +1,7 @@
 from datetime import datetime
 import yt_dlp
 
-# Çalıştığı anki yılı otomatik alır (örn: 2026, 2027, 2028...)
+# Automatically uses current year (2026, 2027, etc.)
 TARGET_YEAR = str(datetime.now().year)
 
 channels = [
@@ -32,17 +32,17 @@ ydl_opts = {
     }
 }
 
-print(f"[BİLGİ] Hedef Yıl Filtresi: {TARGET_YEAR}")
+print(f"[INFO] Target Year Filter: {TARGET_YEAR}")
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     for channel in channels:
-        print(f"[İŞLEM] {channel['name']} kanalı taranıyor...")
+        print(f"[PROCESSING] Scanning channel: {channel['name']}...")
         try:
             target_url = f"https://www.youtube.com/channel/{channel['id']}/playlists"
             channel_info = ydl.extract_info(target_url, download=False)
             
             if not channel_info or 'entries' not in channel_info:
-                print(f" -> [UYARI] {channel['name']} yapısı çözülemedi.")
+                print(f" -> [WARNING] Could not resolve channel structure for {channel['name']}.")
                 continue
                 
             playlist_count = 0
@@ -53,14 +53,14 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 playlist_id = playlist_entry.get('id')
                 playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'")
                 
-                # O anki güncel yıl başlıkta yoksa atla
+                # Year filter check
                 if TARGET_YEAR not in playlist_title:
                     continue
                 
                 if not playlist_id:
                     continue
                     
-                print(f"   -> Oynatma Listesi Keşfedildi ({TARGET_YEAR}): {playlist_title}")
+                print(f"   -> Playlist Found ({TARGET_YEAR}): {playlist_title}")
                 playlist_count += 1
                 
                 playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}"
@@ -80,24 +80,27 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     if not video_id:
                         continue
                         
+                    # TV Show parameters for TiviMate
                     logo = f'tvg-logo="https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg"'
                     group = f'group-title="{channel["name"]}"'
                     series = f'series-name="{playlist_title}"'
                     season_str = 'season="1"'
                     episode_str = f'episode="{episode_num}"'
+                    tv_type = 'tvg-type="tvshow"'
                     
-                    m3u_content += f'#EXTINF:-1 {logo} {group} {series} {season_str} {episode_str},{video_title}\n'
+                    # S01E0X prefix ensures TiviMate groups it into Series format
+                    m3u_content += f'#EXTINF:-1 {tv_type} {logo} {group} {series} {season_str} {episode_str},S01E{episode_num:02d} - {video_title}\n'
                     m3u_content += f'https://www.youtube.com/watch?v={video_id}\n'
                     
                     episode_num += 1
             
-            print(f"[BAŞARI] {channel['name']} için {playlist_count} adet {TARGET_YEAR} oynatma listesi M3U'ya eklendi.")
+            print(f"[SUCCESS] Added {playlist_count} playlists for {channel['name']}.")
                     
         except Exception as e:
-            print(f"[HATA] Beklenmedik hata: {str(e)}")
+            print(f"[ERROR] Unexpected error: {str(e)}")
             continue
 
 with open("tonguc_egitim.m3u", "w", encoding="utf-8") as f:
     f.write(m3u_content)
 
-print(f"[BİTTİ] 'tonguc_egitim.m3u' dosyası {TARGET_YEAR} yılına göre başarıyla güncellendi!")
+print(f"[DONE] 'tonguc_egitim.m3u' updated for {TARGET_YEAR}!")
