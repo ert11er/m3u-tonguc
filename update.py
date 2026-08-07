@@ -19,7 +19,6 @@ channels = [
 
 m3u_content = '#EXTM3U x-tvg-url=""\n'
 
-# yt-dlp configuration forced to Turkish locale/region
 ydl_opts = {
     'extract_flat': 'in_playlist',
     'skip_download': True,
@@ -27,7 +26,6 @@ ydl_opts = {
     'no_warnings': True,
     'ignoreerrors': True,
     'retries': 3,
-    # Force YouTube API to treat requests as coming from Turkey in Turkish
     'hl': 'tr',
     'gl': 'tr',
     'http_headers': {
@@ -42,7 +40,6 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     for channel in channels:
         print(f"[PROCESSING] Scanning channel: {channel['name']}...")
         try:
-            # Added hl=tr and gl=tr parameters to URL endpoints as backup
             target_url = f"https://www.youtube.com/channel/{channel['id']}/playlists?hl=tr&gl=tr"
             channel_info = ydl.extract_info(target_url, download=False)
             
@@ -85,12 +82,15 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                         continue
                         
                     logo = f'tvg-logo="https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg"'
-                    group_name = f"{channel['name']} - {playlist_title}"
+                    
+                    # Group structure: Grade / Course
+                    group_title = f"{channel['name']} | {playlist_title}"
                     
                     stream_url = f"https://invidious.nerdvpn.de/latest_version?id={video_id}&itag=22"
                     
-                    m3u_content += f'#EXTINF:-1 {logo} group-title="{group_name}" tvg-type="vod",S01E{episode_num:02d} - {video_title}\n'
-                    m3u_content += f'#EXTGRP:{group_name}\n'
+                    # Universal VOD / Series syntax
+                    m3u_content += f'#EXTINF:-1 {logo} group-title="{group_title}" tvg-type="vod",Bölüm {episode_num}: {video_title}\n'
+                    m3u_content += f'#EXTGRP:{group_title}\n'
                     m3u_content += f'{stream_url}\n'
                     
                     episode_num += 1
@@ -104,4 +104,4 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 with open("tonguc_egitim.m3u", "w", encoding="utf-8") as f:
     f.write(m3u_content)
 
-print(f"[DONE] 'tonguc_egitim.m3u' updated with forced Turkish locale!")
+print(f"[DONE] 'tonguc_egitim.m3u' updated successfully!")
