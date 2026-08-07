@@ -1,8 +1,9 @@
-name: Auto Update M3U
+name: Update Playlists
+
 on:
   schedule:
-    - cron: '0 3 * * *' # Her gece 03:00'te otomatik çalışır
-  workflow_dispatch: # Elle tetikleme butonu açar
+    - cron: '0 3 * * *' # Runs daily at 03:00 UTC
+  workflow_dispatch:
 
 jobs:
   build:
@@ -14,19 +15,17 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12' # Python sürümü 3.12'ye yükseltildi
+          python-version: '3.10'
 
-      - name: Install yt-dlp
+      - name: Install Dependencies
         run: |
-          python -m pip install --upgrade pip
           pip install yt-dlp
 
-      - name: Run Scraper Script
+      - name: Run Scraper
         run: python update.py
 
-      - name: Commit and Push Changes
+      - name: Commit and Push Data
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-updated playlists to Master M3U8 structure"
-          file_pattern: 'tonguc_egitim.m3u8 sources/*.m3u'
-
+          commit_message: "Auto-updated playlist data"
+          file_pattern: "data/data.json,playlist.m3u"
