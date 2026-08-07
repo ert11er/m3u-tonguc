@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     streamId = streamId.join('/');
   }
 
-  // Uzantıyı temizle (.mp4, .ts vs.)
+  // Uzantıyı temizle (.mp4, .ts vb.)
   const targetId = streamId.replace(/\.[^/.]+$/, "");
 
   try {
@@ -45,13 +45,14 @@ export default async function handler(req, res) {
 
     const videoUrl = `https://www.youtube.com/watch?v=${ytVideoId}`;
 
-    // En kaliteli & aktif Cobalt Instance Havuzu (Sırayla dener)
     const cobaltInstances = [
       'https://bergung.hoffnungfuerdiezukunft.net',
       'https://cobalt.canine.tools',
       'https://cobalt.clxxped.lol',
       'https://cobalt.liubquanti.click'
     ];
+
+    let directStreamUrl = null;
 
     for (const instance of cobaltInstances) {
       try {
@@ -65,24 +66,41 @@ export default async function handler(req, res) {
             url: videoUrl,
             videoQuality: '720'
           }),
-          signal: AbortSignal.timeout(4000) // 4 saniye zaman aşımı
+          signal: AbortSignal.timeout(4000)
         });
 
         if (response.ok) {
           const data = await response.json();
-          const directStreamUrl = data.url || data.picker?.[0]?.url;
-
-          if (directStreamUrl) {
-            return res.redirect(302, directStreamUrl);
-          }
+          directStreamUrl = data.url || data.picker?.[0]?.url;
+          if (directStreamUrl) break;
         }
       } catch (e) {
-        // Sunucu yanıt vermezse veya zaman aşıma uğrarsa bir sonrakine geç
         continue;
       }
     }
 
-    return res.status(500).send("All Cobalt stream instances failed to extract video.");
+    if (!directStreamUrl) {
+      return res.status(500).send("All Cobalt instances failed");
+    }
+
+    // YÖNLENDİRME YERİNE: Yayını doğrudan proxy (pipe) ederek HTTP 200 ile döndür
+    const streamResponse = await fetch(directStreamUrl);
+
+    if (!streamResponse.ok) {
+      return res.status(500).send("Failed to fetch direct video stream");
+    }
+
+    // Gerekli başlıkları aktar
+    res.setHeader('Content-Type', streamResponse.headers.get('content-type') || 'video/mp4');
+    if (streamResponse.headers.get('content-length')) {
+      res.setHeader('Content-Length', streamResponse.headers.get('content-length'));
+    }
+    res.setHeader('Accept-Ranges', 'bytes');
+    res.status(200);
+
+    // Stream verisini aktar
+    const arrayBuffer = await streamResponse.arrayBuffer();
+    return res.send(Buffer.from(arrayBuffer));
 
   } catch (error) {
     return res.status(500).send("Server Error: " + error.message);
