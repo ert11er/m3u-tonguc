@@ -18,9 +18,10 @@ channels = [
     {"name": "11. Sınıf", "id": "UCiuFKj-SmFf8M4m1ybbftCw"}
 ]
 
-m3u_content = '#EXTM3U x-tvg-url="" tvg-type="tvshow"\n'
+# IPTV Oyuncularına bunun VOD/Dizi olduğunu belirten M3U Plus başlığı
+m3u_content = '#EXTM3U x-tvg-url="" tvg-type="series"\n'
 
-# yt-dlp Türkçe zorlama konfigürasyonu
+# yt-dlp Konfigürasyonu (ABD IP'sinden Türkçe çekmeyi garanti eden ayarlar)
 ydl_opts = {
     'extract_flat': 'in_playlist',
     'skip_download': True,
@@ -31,10 +32,16 @@ ydl_opts = {
     'hl': 'tr',
     'gl': 'TR',
     'geo_bypass': True,
+    # Header içerisine cookie koymak yerine YouTube extractor ayarı ile dili Türkçe çakıyoruz:
+    'extractor_args': {
+        'youtube': {
+            'lang': ['tr'],
+            'skip': ['dash', 'hls']
+        }
+    },
     'http_headers': {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-        'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8',
-        'Cookie': 'PREF=hl=tr&gl=TR;'
+        'Accept-Language': 'tr-TR,tr;q=0.9',
     }
 }
 
@@ -58,7 +65,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 playlist_id = playlist_entry.get('id')
                 playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'").replace(',', '')
                 
-                # Sadece hedef yılı içeren listeleri alma
+                # Yıl filtresi
                 if TARGET_YEAR not in playlist_title:
                     continue
                 
@@ -96,19 +103,18 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                         
                     stream_url = f"https://invidious.nerdvpn.de/latest_version?id={video_id}&itag=22"
                     
-                    # DIZILER (SERIES) FORMATI:
-                    # group-title = Kategori (Örn: 10. Sınıf)
-                    # series-name = Dizi Adı (Örn: 10. Sınıf Coğrafya 1. Dönem)
-                    # season & episode = Bölüm yapılandırması
-                    # Kart başlığına S01E01 koymuyoruz ki dizi adı sanmasın!
+                    # XTREAM CODES SIMULATION METADATA:
+                    # 'group-title' -> Sınıf Kümeleri (Örn: 10. Sınıf)
+                    # 'series-name' -> Oynatma listesinin adı (Dizi adı burada gruplanır)
+                    # 'cmd="series"' -> Oyuncunun bunu Dizi olarak işlemesini zorlar
                     
                     m3u_content += (
                         f'#EXTINF:-1 tvg-logo="{poster_url}" '
                         f'group-title="{channel["name"]}" '
                         f'series-name="{playlist_title}" '
-                        f'tvg-name="{playlist_title}" '
+                        f'tvg-name="{playlist_title} - S01E{episode_num:02d}" '
                         f'season="1" episode="{episode_num}" '
-                        f'tvg-type="tvshow",{video_title}\n'
+                        f'cmd="series" tvg-type="series",S01E{episode_num:02d} - {video_title}\n'
                     )
                     m3u_content += f'#EXTGRP:{channel["name"]}\n'
                     m3u_content += f'{stream_url}\n'
