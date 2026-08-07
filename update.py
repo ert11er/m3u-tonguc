@@ -32,7 +32,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         print(f"[İŞLEM] {channel['name']} kanalı taranıyor...")
         try:
             # DOĞRULANMIŞ URL BİÇİMİ: /channel/id formatı yt-dlp tarafından yerleşik olarak desteklenir
-            channel_url = f"https://youtube.com{channel['id']}"
+            channel_url = f"https://youtube.com/{channel['id']}"
             channel_info = ydl.extract_info(channel_url, download=False)
             
             if not channel_info or 'entries' not in channel_info:
@@ -50,7 +50,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                         
                     print(f"   -> Oynatma Listesi Keşfedildi: {playlist_title}")
                     
-                    playlist_url = f"https://youtube.com{playlist_id}"
+                    playlist_url = f"https://youtube.com/{playlist_id}"
                     playlist_info = ydl.extract_info(playlist_url, download=False)
                     
                     if not playlist_info or 'entries' not in playlist_info:
@@ -64,14 +64,14 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                         if not video_id:
                             continue
                             
-                        logo = f'tvg-logo="https://youtube.com{video_id}/maxresdefault.jpg"'
+                        logo = f'tvg-logo="https://youtube.com/{video_id}/maxresdefault.jpg"'
                         group = f'group-title="{channel["name"]}"'
                         series = f'series-name="{playlist_title}"'
                         season_str = 'season="1"'
                         episode_str = f'episode="{episode_num}"'
                         
                         m3u_content += f'#EXTINF:-1 {logo} {group} {series} {season_str} {episode_str},{video_title}\n'
-                        m3u_content += f'https://youtube.com{video_id}\n'
+                        m3u_content += f'https://youtube.com/{video_id}\n'
                         
                         episode_num += 1
                         
