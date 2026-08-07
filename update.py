@@ -17,8 +17,9 @@ channels = [
     {"name": "11. sınıf", "id": "UCiuFKj-SmFf8M4m1ybbftCw"}
 ]
 
-m3u_content = "#EXTM3U x-tvg-url=\"\"\n"
+m3u_content = '#EXTM3U x-tvg-url=""\n'
 
+# yt-dlp configuration forced to Turkish locale/region
 ydl_opts = {
     'extract_flat': 'in_playlist',
     'skip_download': True,
@@ -26,9 +27,12 @@ ydl_opts = {
     'no_warnings': True,
     'ignoreerrors': True,
     'retries': 3,
+    # Force YouTube API to treat requests as coming from Turkey in Turkish
+    'hl': 'tr',
+    'gl': 'tr',
     'http_headers': {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-        'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7'
+        'Accept-Language': 'tr-TR,tr;q=0.9',
     }
 }
 
@@ -38,7 +42,8 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     for channel in channels:
         print(f"[PROCESSING] Scanning channel: {channel['name']}...")
         try:
-            target_url = f"https://www.youtube.com/channel/{channel['id']}/playlists"
+            # Added hl=tr and gl=tr parameters to URL endpoints as backup
+            target_url = f"https://www.youtube.com/channel/{channel['id']}/playlists?hl=tr&gl=tr"
             channel_info = ydl.extract_info(target_url, download=False)
             
             if not channel_info or 'entries' not in channel_info:
@@ -62,7 +67,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 print(f"   -> Playlist Found ({TARGET_YEAR}): {playlist_title}")
                 playlist_count += 1
                 
-                playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}"
+                playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}&hl=tr&gl=tr"
                 playlist_info = ydl.extract_info(playlist_url, download=False)
                 
                 if not playlist_info or 'entries' not in playlist_info:
@@ -82,8 +87,6 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     logo = f'tvg-logo="https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg"'
                     group_name = f"{channel['name']} - {playlist_title}"
                     
-                    # Direct HLS Stream format for player stream parsing
-                    # Uses invidious stream resolution redirect for M3U compatibility
                     stream_url = f"https://invidious.nerdvpn.de/latest_version?id={video_id}&itag=22"
                     
                     m3u_content += f'#EXTINF:-1 {logo} group-title="{group_name}" tvg-type="vod",S01E{episode_num:02d} - {video_title}\n'
@@ -101,4 +104,4 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 with open("tonguc_egitim.m3u", "w", encoding="utf-8") as f:
     f.write(m3u_content)
 
-print(f"[DONE] 'tonguc_egitim.m3u' updated successfully!")
+print(f"[DONE] 'tonguc_egitim.m3u' updated with forced Turkish locale!")
