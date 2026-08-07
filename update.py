@@ -1,4 +1,8 @@
+from datetime import datetime
 import yt_dlp
+
+# Çalıştığı anki yılı otomatik alır (örn: 2026, 2027, 2028...)
+TARGET_YEAR = str(datetime.now().year)
 
 channels = [
     {"name": "1. sınıf", "id": "UCyRSGDRdOroDN6vXtobLTfw"},
@@ -28,7 +32,7 @@ ydl_opts = {
     }
 }
 
-TARGET_YEAR = "2026"
+print(f"[BİLGİ] Hedef Yıl Filtresi: {TARGET_YEAR}")
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     for channel in channels:
@@ -49,11 +53,9 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 playlist_id = playlist_entry.get('id')
                 playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'")
                 
-                # --- YIL FİLTRESİ ---
-                # Oynatma listesi başlığında "2026" geçmiyorsa atla
+                # O anki güncel yıl başlıkta yoksa atla
                 if TARGET_YEAR not in playlist_title:
                     continue
-                # ---------------------
                 
                 if not playlist_id:
                     continue
@@ -89,7 +91,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     
                     episode_num += 1
             
-            print(f"[BAŞARI] {channel['name']} için {playlist_count} adet 2026 oynatma listesi M3U'ya eklendi.")
+            print(f"[BAŞARI] {channel['name']} için {playlist_count} adet {TARGET_YEAR} oynatma listesi M3U'ya eklendi.")
                     
         except Exception as e:
             print(f"[HATA] Beklenmedik hata: {str(e)}")
@@ -98,4 +100,4 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 with open("tonguc_egitim.m3u", "w", encoding="utf-8") as f:
     f.write(m3u_content)
 
-print("[BİTTİ] 'tonguc_egitim.m3u' dosyası başarıyla güncellendi!")
+print(f"[BİTTİ] 'tonguc_egitim.m3u' dosyası {TARGET_YEAR} yılına göre başarıyla güncellendi!")
