@@ -1,4 +1,4 @@
-import subprocess
+import yt_dlp
 
 channels = [
     {"name": "1. sınıf", "id": "UCyRSGDRdOroDN6vXtobLTfw"},
@@ -14,35 +14,76 @@ channels = [
     {"name": "11. sınıf", "id": "UCiuFKj-SmFf8M4m1ybbftCw"}
 ]
 
-# Dosyayı sıfırdan oluşturup başlığı yazıyoruz
+m3u_content = "#EXTM3U\n"
+
+# yt-dlp için tarayıcı taklidi ve performans ayarları
+ydl_opts = {
+    'extract_flat': True,  # Sadece meta verileri çek, videoları indirme
+    'skip_download': True,
+    'quiet': True,
+    'no_warnings': True,
+    'http_headers': {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
+        'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7'
+    }
+}
+
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    for channel in channels:
+        print(f"[İŞLEM] {channel['name']} kanalı taranıyor...")
+        try:
+            # 1. Adım: Kanalın "Oynatma Listeleri" sekmesindeki tüm listeleri çek
+            channel_url = f"https://youtube.com{channel['id']}/playlists"
+            channel_info = ydl.extract_info(channel_url, download=False)
+            
+            if not channel_info or 'entries' not in channel_info:
+                print(f" -> [UYARI] {channel['name']} için oynatma listesi bulunamadı.")
+                continue
+                
+            # Bulunan her oynatma listesi için dön
+            for playlist_entry in channel_info['entries']:
+                playlist_id = playlist_entry.get('id')
+                playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'")
+                
+                if not playlist_id:
+                    continue
+                    
+                print(f"   -> Oynatma Listesi Keşfedildi: {playlist_title}")
+                
+                # 2. Adım: Bu oynatma listesinin içindeki videoları çek
+                playlist_url = f"https://youtube.com{playlist_id}"
+                playlist_info = ydl.extract_info(playlist_url, download=False)
+                
+                if not playlist_info or 'entries' not in playlist_info:
+                    continue
+                    
+                episode_num = 1
+                for video_entry in playlist_info['entries']:
+                    video_id = video_entry.get('id')
+                    video_title = video_entry.get('title', 'Ders Videosu').replace('"', "'")
+                    
+                    if not video_id:
+                        continue
+                        
+                    # IPTV TV Show formatı etiketleri
+                    logo = f'tvg-logo="https://youtube.com{video_id}/maxresdefault.jpg"'
+                    group = f'group-title="{channel["name"]}"'
+                    series = f'series-name="{playlist_title}"'
+                    season_str = 'season="1"'
+                    episode_str = f'episode="{episode_num}"'
+                    
+                    m3u_content += f'#EXTINF:-1 {logo} {group} {series} {season_str} {episode_str},{video_title}\n'
+                    m3u_content += f'https://youtube.com{video_id}\n'
+                    
+                    episode_num += 1
+                    
+        except Exception as e:
+            # Hata detayını tam olarak görmek için e'yi yazdırıyoruz
+            print(f"[HATA] {channel['name']} işlenirken hata oluştu: {str(e)}")
+            continue
+
+# Dosyayı tek seferde diske yaz
 with open("tonguc_egitim.m3u", "w", encoding="utf-8") as f:
-    f.write("#EXTM3U\n")
+    f.write(m3u_content)
 
-for channel in channels:
-    print(f"[İŞLEM] {channel['name']} için tüm oynatma listeleri taranıyor...")
-    
-    # yt-dlp'nin akıllı şablon sistemi ile doğrudan M3U satırlarını çıktı alıyoruz
-    # Her oynatma listesini (playlist) IPTV için bağımsız bir dizi (series-name) yapar.
-    template = (
-        '#EXTINF:-1 tvg-logo="https://youtube.com" '
-        f'group-title="{channel["name"]}" '
-        'series-name="%(playlist_title)s" season="1" episode="%(playlist_index)s",%(title)s\n'
-        'https://youtube.com'
-    )
-    
-    cmd = [
-        "yt-dlp",
-        "--flat-playlist",
-        "--print", template,
-        f"https://youtube.com{channel['id']}/playlists"
-    ]
-    
-    try:
-        # Çıktıları doğrudan dosyaya ekliyoruz (append modu)
-        with open("tonguc_egitim.m3u", "a", encoding="utf-8") as f:
-            subprocess.run(cmd, stdout=f, stderr=subprocess.DEVNULL, text=True, check=True)
-    except Exception as e:
-        print(f"[HATA] {channel['name']} işlenirken bir sorun oluştu, sonraki kanala geçiliyor.")
-        continue
-
-print("[BAŞARI] 'tonguc_egitim.m3u' dosyası tüm oynatma listeleriyle birlikte dolduruldu!")
+print("[BAŞARI] 'tonguc_egitim.m3u' dosyası tüm alt ders listeleriyle başarıyla dolduruldu!")
