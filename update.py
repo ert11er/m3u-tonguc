@@ -4,6 +4,7 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import yt_dlp
 
+# Dinamik olarak mevcut yılı alır (Örn: 2026)
 TARGET_YEAR = str(datetime.now().year)
 
 channels = [
@@ -86,7 +87,7 @@ def process_playlist(pl, category_id, category_name, ydl):
     return None
 
 def main():
-    print("[START] Hızlı tarama başlatıldı...")
+    print(f"[START] Hızlı tarama başlatıldı (Filtre Yılı: {TARGET_YEAR})...")
     output_data = {"categories": [], "series": []}
     
     for ch in channels:
@@ -109,12 +110,19 @@ def main():
                 continue
 
             raw_playlists = ch_info.get('entries', [])
-            print(f"  [INFO] {ch['name']} için {len(raw_playlists)} oynatma listesi bulundu. Paralel çekiliyor...")
+            
+            # FILTRE: Sadece başlığında o anki dinamik yıl (Örn: 2026) olan playlistleri seçer
+            filtered_playlists = [
+                pl for pl in raw_playlists
+                if pl and TARGET_YEAR in str(pl.get('title', ''))
+            ]
+            
+            print(f"  [INFO] {ch['name']} için toplam {len(raw_playlists)} playlist'ten {len(filtered_playlists)} tanesi {TARGET_YEAR} yılına ait. Paralel çekiliyor...")
 
             with ThreadPoolExecutor(max_workers=8) as executor:
                 futures = [
                     executor.submit(process_playlist, pl, ch["category_id"], ch["name"], ydl)
-                    for pl in raw_playlists
+                    for pl in filtered_playlists
                 ]
                 
                 for future in as_completed(futures):
