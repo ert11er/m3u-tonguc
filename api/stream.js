@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   let streamId = req.query.stream_id;
 
   if (!streamId && req.url) {
@@ -43,20 +43,32 @@ export default function handler(req, res) {
       return res.status(404).send(`Episode not found for ID: ${targetId}`);
     }
 
-    // Extract YouTube Video ID from URL or targetId
+    // Extract YouTube Video ID
     let ytVideoId = null;
     const match = targetUrl.match(/[?&]v=([^&]+)/) || targetUrl.match(/[?&]id=([^&]+)/);
     if (match && match[1]) {
       ytVideoId = match[1];
+    } else {
+      ytVideoId = targetId;
     }
 
-    if (ytVideoId) {
-      // Stream using active inv.nadeko.net instance
-      const streamDirectUrl = `https://inv.nadeko.net/latest_version?id=${ytVideoId}&itag=22`;
-      return res.redirect(302, streamDirectUrl);
+    // Query Piped API for direct stream streams
+    const pipedRes = await fetch(`https://pipedapi.kavin.rocks/streams/${ytVideoId}`);
+    if (pipedRes.ok) {
+      const pipedData = await pipedRes.json();
+      
+      // Look for a video+audio stream (720p or 360p MP4)
+      const stream = (pipedData.videoStreams || []).find(
+        s => s.mimeType?.includes('video/mp4') && s.videoOnly === false
+      ) || pipedData.videoStreams?.[0];
+
+      if (stream?.url) {
+        return res.redirect(302, stream.url);
+      }
     }
 
-    return res.redirect(302, targetUrl);
+    // Fallback: Redirect directly to YouTube video URL if API fails
+    return res.redirect(302, `https://www.youtube.com/watch?v=${ytVideoId}`);
 
   } catch (error) {
     return res.status(500).send("Server Error: " + error.message);
