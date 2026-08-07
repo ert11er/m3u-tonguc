@@ -45,44 +45,9 @@ export default async function handler(req, res) {
 
     const videoUrl = `https://www.youtube.com/watch?v=${ytVideoId}`;
 
-    // -------------------------------------------------------------
-    // 1. AŞAMA: Invidious / Piped Doğrudan Akış (Direct Stream Pipe)
-    // -------------------------------------------------------------
-    const directStreamEndpoints = [
-      `https://inv.nadeko.net/latest_version?id=${ytVideoId}&itag=22`,
-      `https://invidious.nerdvpn.de/latest_version?id=${ytVideoId}&itag=22`,
-      `https://yt.drgnz.club/latest_version?id=${ytVideoId}&itag=22`,
-      `https://invidious.flokinet.to/latest_version?id=${ytVideoId}&itag=22`
-    ];
-
-    for (const streamUrl of directStreamEndpoints) {
-      try {
-        const streamRes = await fetch(streamUrl, {
-          signal: AbortSignal.timeout(4000),
-          headers: {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-          }
-        });
-
-        if (streamRes.ok) {
-          res.setHeader('Content-Type', 'video/mp4');
-          if (streamRes.headers.get('content-length')) {
-            res.setHeader('Content-Length', streamRes.headers.get('content-length'));
-          }
-          res.setHeader('Accept-Ranges', 'bytes');
-          res.status(200);
-
-          const arrayBuffer = await streamRes.arrayBuffer();
-          return res.send(Buffer.from(arrayBuffer));
-        }
-      } catch (e) {
-        continue;
-      }
-    }
-
-    // -------------------------------------------------------------
-    // 2. AŞAMA: Cobalt API Havuzu (Link Çözümleme + Stream Pipe)
-    // -------------------------------------------------------------
+    // =============================================================
+    // 1. ÖNCELİK: Cobalt API Havuzu
+    // =============================================================
     const cobaltInstances = [
       'https://bergung.hoffnungfuerdiezukunft.net',
       'https://cobalt.canine.tools',
@@ -129,7 +94,45 @@ export default async function handler(req, res) {
       }
     }
 
-    return res.status(500).send("All alternative stream sources failed.");
+    // =============================================================
+    // 2. ÖNCELİK: Invidious / Piped Sunucuları
+    // =============================================================
+    const invidiousEndpoints = [
+      `https://inv.nadeko.net/latest_version?id=${ytVideoId}&itag=22`,
+      `https://invidious.nerdvpn.de/latest_version?id=${ytVideoId}&itag=22`,
+      `https://yt.drgnz.club/latest_version?id=${ytVideoId}&itag=22`,
+      `https://invidious.flokinet.to/latest_version?id=${ytVideoId}&itag=22`
+    ];
+
+    for (const streamUrl of invidiousEndpoints) {
+      try {
+        const streamRes = await fetch(streamUrl, {
+          signal: AbortSignal.timeout(4000),
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+          }
+        });
+
+        if (streamRes.ok) {
+          res.setHeader('Content-Type', 'video/mp4');
+          if (streamRes.headers.get('content-length')) {
+            res.setHeader('Content-Length', streamRes.headers.get('content-length'));
+          }
+          res.setHeader('Accept-Ranges', 'bytes');
+          res.status(200);
+
+          const arrayBuffer = await streamRes.arrayBuffer();
+          return res.send(Buffer.from(arrayBuffer));
+        }
+      } catch (e) {
+        continue;
+      }
+    }
+
+    // =============================================================
+    // 3. ÖNCELİK: YouTube Embed (WebView Fallback)
+    // =============================================================
+    return res.redirect(302, `https://www.youtube.com/embed/${ytVideoId}?autoplay=1`);
 
   } catch (error) {
     return res.status(500).send("Server Error: " + error.message);
