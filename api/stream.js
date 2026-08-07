@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
+import ytdl from '@distube/ytdl-core';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   let streamId = req.query.stream_id;
 
   if (!streamId && req.url) {
@@ -43,7 +44,7 @@ export default function handler(req, res) {
       return res.status(404).send(`Episode not found for ID: ${targetId}`);
     }
 
-    // Extract raw YouTube Video ID
+    // Extract YouTube Video ID
     let ytVideoId = null;
     const match = targetUrl.match(/[?&]v=([^&]+)/) || targetUrl.match(/[?&]id=([^&]+)/);
     if (match && match[1]) {
@@ -52,12 +53,26 @@ export default function handler(req, res) {
       ytVideoId = targetId;
     }
 
-    // Direct stream link from inv.nadeko.net (720p/360p video stream)
-    const directStreamUrl = `https://inv.nadeko.net/latest_version?id=${ytVideoId}&itag=22&listen=false`;
+    const videoUrl = `https://www.youtube.com/watch?v=${ytVideoId}`;
 
-    return res.redirect(302, directStreamUrl);
+    // Extract real-time stream info using ytdl-core
+    const info = await ytdl.getInfo(videoUrl);
+    
+    // Select combined video+audio MP4 stream (itag 22 = 720p, or fallback to any combined mp4)
+    const format = ytdl.chooseFormat(info.formats, {
+      quality: 'highestvideo',
+      filter: format => format.container === 'mp4' && format.hasVideo && format.hasAudio
+    });
+
+    if (format && format.url) {
+      // Redirect player directly to Google Video CDN URL
+      return res.redirect(302, format.url);
+    }
+
+    return res.status(500).send("No valid video stream format found.");
 
   } catch (error) {
-    return res.status(500).send("Server Error: " + error.message);
+    console.error("YTDL Error:", error);
+    return res.status(500).send("Server Stream Error: " + error.message);
   }
 }

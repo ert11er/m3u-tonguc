@@ -1,5 +1,15 @@
 {
-  "name": "tonguc-iptv-proxy",
+  "name": "m3u-tonguc",
   "version": "1.0.0",
-  "type": "module"
+  "description": "Tonguç IPTV M3U & Xtream Codes API Server",
+  "main": "api/player_api.js",
+  "scripts": {
+    "start": "node api/player_api.js"
+  },
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.10"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
 }
