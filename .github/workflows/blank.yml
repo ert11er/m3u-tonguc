@@ -1,0 +1,31 @@
+name: Auto Update M3U
+on:
+  schedule:
+    - cron: '0 3 * * *' # Her gece 03:00'te otomatik çalışır
+  workflow_dispatch: # Elle tetikleme butonu açar
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install yt-dlp
+        run: |
+          python -m pip install --upgrade pip
+          pip install yt-dlp
+
+      - name: Run Scraper Script
+        run: python update.py
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-updated playlists to TV Shows"
+          file_pattern: 'tonguc_egitim.m3u'
