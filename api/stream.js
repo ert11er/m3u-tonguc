@@ -17,7 +17,7 @@ export default function handler(req, res) {
     streamId = streamId.join('/');
   }
 
-  // Remove extension (.mp4, .ts)
+  // Strip extension (.mp4, .ts)
   const targetId = streamId.replace(/\.[^/.]+$/, "");
 
   try {
@@ -43,19 +43,19 @@ export default function handler(req, res) {
       return res.status(404).send(`Episode not found for ID: ${targetId}`);
     }
 
-    // Extract raw YouTube Video ID from Invidious URL (e.g., id=p3vZpNjsibA)
-    const ytMatch = targetUrl.match(/[?&]id=([^&]+)/);
-    
-    if (ytMatch && ytMatch[1]) {
-      const ytVideoId = ytMatch[1];
-      
-      // Redirect to a working Invidious/Cobalt/Piped video stream instance
-      // Cobalt / Invidious alternative endpoint:
-      const streamDirectUrl = `https://inv.tux.im/latest_version?id=${ytVideoId}&itag=22`;
+    // Extract YouTube Video ID from URL or targetId
+    let ytVideoId = null;
+    const match = targetUrl.match(/[?&]v=([^&]+)/) || targetUrl.match(/[?&]id=([^&]+)/);
+    if (match && match[1]) {
+      ytVideoId = match[1];
+    }
+
+    if (ytVideoId) {
+      // Direct stream URL using active, high-uptime Invidious instance
+      const streamDirectUrl = `https://invidious.flokinet.to/latest_version?id=${ytVideoId}&itag=22`;
       return res.redirect(302, streamDirectUrl);
     }
 
-    // Fallback redirect to original URL
     return res.redirect(302, targetUrl);
 
   } catch (error) {

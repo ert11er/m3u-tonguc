@@ -69,7 +69,7 @@ def process_playlist(pl, category_id, category_name, ydl):
             "episode_num": idx,
             "title": v_title,
             "container_extension": "mp4",
-            "url": f"https://inv.tux.im/latest_version?id={vid}&itag=22",
+            "url": f"https://www.youtube.com/watch?v={vid}",
             "info": {
                 "movie_image": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
             }
