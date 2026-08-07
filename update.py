@@ -28,11 +28,12 @@ ydl_opts = {
     }
 }
 
+TARGET_YEAR = "2026"
+
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     for channel in channels:
         print(f"[İŞLEM] {channel['name']} kanalı taranıyor...")
         try:
-            # Kanal playlist dizini URL formatı düzeltildi
             target_url = f"https://www.youtube.com/channel/{channel['id']}/playlists"
             channel_info = ydl.extract_info(target_url, download=False)
             
@@ -48,13 +49,18 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 playlist_id = playlist_entry.get('id')
                 playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'")
                 
+                # --- YIL FİLTRESİ ---
+                # Oynatma listesi başlığında "2026" geçmiyorsa atla
+                if TARGET_YEAR not in playlist_title:
+                    continue
+                # ---------------------
+                
                 if not playlist_id:
                     continue
                     
-                print(f"   -> Oynatma Listesi Keşfedildi: {playlist_title}")
+                print(f"   -> Oynatma Listesi Keşfedildi ({TARGET_YEAR}): {playlist_title}")
                 playlist_count += 1
                 
-                # Oynatma listesi URL formatı düzeltildi
                 playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}"
                 playlist_info = ydl.extract_info(playlist_url, download=False)
                 
@@ -72,7 +78,6 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     if not video_id:
                         continue
                         
-                    # Video kapak ve video link formatı düzeltildi
                     logo = f'tvg-logo="https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg"'
                     group = f'group-title="{channel["name"]}"'
                     series = f'series-name="{playlist_title}"'
@@ -84,7 +89,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     
                     episode_num += 1
             
-            print(f"[BAŞARI] {channel['name']} için {playlist_count} adet oynatma listesi M3U'ya eklendi.")
+            print(f"[BAŞARI] {channel['name']} için {playlist_count} adet 2026 oynatma listesi M3U'ya eklendi.")
                     
         except Exception as e:
             print(f"[HATA] Beklenmedik hata: {str(e)}")
