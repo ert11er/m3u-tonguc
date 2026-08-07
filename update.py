@@ -1,7 +1,7 @@
+import os
 from datetime import datetime
 import yt_dlp
 
-# Otomatik yıl alma (2026)
 TARGET_YEAR = str(datetime.now().year)
 
 channels = [
@@ -18,10 +18,12 @@ channels = [
     {"name": "11. Sınıf", "id": "UCiuFKj-SmFf8M4m1ybbftCw"}
 ]
 
-# IPTV Oyuncularına bunun VOD/Dizi olduğunu belirten M3U Plus başlığı
-m3u_content = '#EXTM3U x-tvg-url="" tvg-type="series"\n'
+# sources klasörünü oluştur
+os.makedirs("sources", exist_ok=True)
 
-# yt-dlp Konfigürasyonu (ABD IP'sinden Türkçe çekmeyi garanti eden ayarlar)
+# Master M3U8 içeriği
+master_m3u8 = '#EXTM3U x-tvg-url="" tvg-type="series"\n'
+
 ydl_opts = {
     'extract_flat': 'in_playlist',
     'skip_download': True,
@@ -32,7 +34,6 @@ ydl_opts = {
     'hl': 'tr',
     'gl': 'TR',
     'geo_bypass': True,
-    # Header içerisine cookie koymak yerine YouTube extractor ayarı ile dili Türkçe çakıyoruz:
     'extractor_args': {
         'youtube': {
             'lang': ['tr'],
@@ -65,14 +66,14 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 playlist_id = playlist_entry.get('id')
                 playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'").replace(',', '')
                 
-                # Yıl filtresi
+                # Yıl Filtresi
                 if TARGET_YEAR not in playlist_title:
                     continue
                 
                 if not playlist_id:
                     continue
                     
-                print(f"   -> Oynatma Listesi Keşfedildi: {playlist_title}")
+                print(f"   -> Dizi Oluşturuluyor: {playlist_title}")
                 playlist_count += 1
                 
                 playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}&hl=tr&gl=TR"
@@ -81,16 +82,14 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 if not playlist_info or 'entries' not in playlist_info:
                     continue
                     
-                # İlk videonun görselini dizinin kapak resmi yap
-                first_video_id = ""
-                for v in playlist_info['entries']:
-                    if v and v.get('id'):
-                        first_video_id = v.get('id')
-                        break
+                # Diziye ait alt M3U dosyasının adı
+                clean_filename = f"{playlist_id}.m3u"
+                sub_m3u_path = os.path.join("sources", clean_filename)
                 
-                poster_url = f"https://i.ytimg.com/vi/{first_video_id}/maxresdefault.jpg" if first_video_id else ""
-
+                sub_m3u_content = '#EXTM3U tvg-type="series"\n'
+                first_video_id = ""
                 episode_num = 1
+                
                 for video_entry in playlist_info['entries']:
                     if not video_entry:
                         continue
@@ -101,33 +100,42 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     if not video_id:
                         continue
                         
+                    if not first_video_id:
+                        first_video_id = video_id
+                        
                     stream_url = f"https://invidious.nerdvpn.de/latest_version?id={video_id}&itag=22"
                     
-                    # XTREAM CODES SIMULATION METADATA:
-                    # 'group-title' -> Sınıf Kümeleri (Örn: 10. Sınıf)
-                    # 'series-name' -> Oynatma listesinin adı (Dizi adı burada gruplanır)
-                    # 'cmd="series"' -> Oyuncunun bunu Dizi olarak işlemesini zorlar
-                    
-                    m3u_content += (
-                        f'#EXTINF:-1 tvg-logo="{poster_url}" '
-                        f'group-title="{channel["name"]}" '
-                        f'series-name="{playlist_title}" '
-                        f'tvg-name="{playlist_title} - S01E{episode_num:02d}" '
-                        f'season="1" episode="{episode_num}" '
-                        f'cmd="series" tvg-type="series",S01E{episode_num:02d} - {video_title}\n'
+                    # Alt M3U Dosyasına Sadece Bölümleri Ekle
+                    sub_m3u_content += (
+                        f'#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg" '
+                        f'series-name="{playlist_title}" season="1" episode="{episode_num}",S01E{episode_num:02d} - {video_title}\n'
                     )
-                    m3u_content += f'#EXTGRP:{channel["name"]}\n'
-                    m3u_content += f'{stream_url}\n'
-                    
+                    sub_m3u_content += f'{stream_url}\n'
                     episode_num += 1
+                
+                # Alt M3U dosyasını kaydet
+                with open(sub_m3u_path, "w", encoding="utf-8") as f:
+                    f.write(sub_m3u_content)
+                
+                poster_url = f"https://i.ytimg.com/vi/{first_video_id}/maxresdefault.jpg" if first_video_id else ""
+                
+                # Master M3U8 Listesine Bu Diziyi/Playlist'i Ekle
+                master_m3u8 += (
+                    f'#EXTINF:-1 tvg-logo="{poster_url}" '
+                    f'group-title="{channel["name"]}" '
+                    f'tvg-name="{playlist_title}" tvg-type="series",{playlist_title}\n'
+                )
+                # GitHub Raw üzerindeki alt dosya yoluna yönlendir
+                master_m3u8 += f'sources/{clean_filename}\n'
             
-            print(f"[BAŞARI] {channel['name']} için {playlist_count} adet Dizi eklendi.")
+            print(f"[BAŞARI] {channel['name']} için {playlist_count} adet Dizi yapılandırıldı.")
                     
         except Exception as e:
             print(f"[HATA] Beklenmedik hata: {str(e)}")
             continue
 
-with open("tonguc_egitim.m3u", "w", encoding="utf-8") as f:
-    f.write(m3u_content)
+# Master dosyayı m3u8 olarak kaydet
+with open("tonguc_egitim.m3u8", "w", encoding="utf-8") as f:
+    f.write(master_m3u8)
 
-print("[BİTTİ] 'tonguc_egitim.m3u' güncellendi!")
+print("[BİTTİ] Master Playlist 'tonguc_egitim.m3u8' ve 'sources/' klasörü başarıyla oluşturuldu!")
