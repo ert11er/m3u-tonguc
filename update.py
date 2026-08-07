@@ -1,23 +1,25 @@
 from datetime import datetime
 import yt_dlp
 
+# Automatically uses current year (e.g. 2026)
 TARGET_YEAR = str(datetime.now().year)
 
 channels = [
-    {"name": "1. sınıf", "id": "UCyRSGDRdOroDN6vXtobLTfw"},
-    {"name": "2. sınıf", "id": "UCkI5pnECWXuniFCQpe6nWQw"},
+    {"name": "1. Sınıf", "id": "UCyRSGDRdOroDN6vXtobLTfw"},
+    {"name": "2. Sınıf", "id": "UCkI5pnECWXuniFCQpe6nWQw"},
     {"name": "3. Sınıf", "id": "UCWKFn2p0uodV8JCdsYtGLIw"},
-    {"name": "4. sınıf", "id": "UCK4MoKPUA5lJjiO18yc_YMA"},
-    {"name": "5. sınıf", "id": "UCb-0JQ4tI03T5rHdFe2GVoA"},
-    {"name": "6. sınıf", "id": "UCntJ4oa66gOoonxnJ5MWduQ"},
-    {"name": "7. sınıf", "id": "UCI5Ir6-br-HM54InF7HUlzg"},
-    {"name": "8. sınıf", "id": "UCPdN4Vx2DogwmjDJCkyVcXQ"},
-    {"name": "9. sınıf", "id": "UCnMkrwpqeeUdULISjn-_NGA"},
-    {"name": "10. sınıf", "id": "UC-5ku9Z61IGy12z8xVeFA6g"},
-    {"name": "11. sınıf", "id": "UCiuFKj-SmFf8M4m1ybbftCw"}
+    {"name": "4. Sınıf", "id": "UCK4MoKPUA5lJjiO18yc_YMA"},
+    {"name": "5. Sınıf", "id": "UCb-0JQ4tI03T5rHdFe2GVoA"},
+    {"name": "6. Sınıf", "id": "UCntJ4oa66gOoonxnJ5MWduQ"},
+    {"name": "7. Sınıf", "id": "UCI5Ir6-br-HM54InF7HUlzg"},
+    {"name": "8. Sınıf", "id": "UCPdN4Vx2DogwmjDJCkyVcXQ"},
+    {"name": "9. Sınıf", "id": "UCnMkrwpqeeUdULISjn-_NGA"},
+    {"name": "10. Sınıf", "id": "UC-5ku9Z61IGy12z8xVeFA6g"},
+    {"name": "11. Sınıf", "id": "UCiuFKj-SmFf8M4m1ybbftCw"}
 ]
 
-m3u_content = '#EXTM3U x-tvg-url=""\n'
+# Standard M3U header declaring VOD support
+m3u_content = '#EXTM3U x-tvg-url="" tvg-type="vod"\n'
 
 ydl_opts = {
     'extract_flat': 'in_playlist',
@@ -55,6 +57,7 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 playlist_id = playlist_entry.get('id')
                 playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'")
                 
+                # Filter by year
                 if TARGET_YEAR not in playlist_title:
                     continue
                 
@@ -83,14 +86,22 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                         
                     logo = f'tvg-logo="https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg"'
                     
-                    # Group structure: Grade / Course
-                    group_title = f"{channel['name']} | {playlist_title}"
+                    # Category naming: "Grade Level / Course Name"
+                    category_name = f"{channel['name']} - {playlist_title}"
                     
+                    # Direct stream URL for M3U compatibility
                     stream_url = f"https://invidious.nerdvpn.de/latest_version?id={video_id}&itag=22"
                     
-                    # Universal VOD / Series syntax
-                    m3u_content += f'#EXTINF:-1 {logo} group-title="{group_title}" tvg-type="vod",Bölüm {episode_num}: {video_title}\n'
-                    m3u_content += f'#EXTGRP:{group_title}\n'
+                    # Universal TV Show / VOD Metadata Format:
+                    # - group-title and #EXTGRP for categorization
+                    # - series-name, season, episode for TV series grouping
+                    # - S01E0X prefix in the title for regex-based parsers
+                    m3u_content += (
+                        f'#EXTINF:-1 {logo} group-title="{category_name}" '
+                        f'series-name="{playlist_title}" season="1" episode="{episode_num}" '
+                        f'tvg-type="tvshow",S01E{episode_num:02d} - {video_title}\n'
+                    )
+                    m3u_content += f'#EXTGRP:{category_name}\n'
                     m3u_content += f'{stream_url}\n'
                     
                     episode_num += 1
