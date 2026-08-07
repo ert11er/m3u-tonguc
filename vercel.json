@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/player_api.php", "destination": "/api/player_api" },
+    { "source": "/playlist.m3u", "destination": "/api/playlist_m3u" }
+  ]
+}
