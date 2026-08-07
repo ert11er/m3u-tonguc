@@ -45,6 +45,44 @@ export default async function handler(req, res) {
 
     const videoUrl = `https://www.youtube.com/watch?v=${ytVideoId}`;
 
+    // -------------------------------------------------------------
+    // 1. AŞAMA: Invidious / Piped Doğrudan Akış (Direct Stream Pipe)
+    // -------------------------------------------------------------
+    const directStreamEndpoints = [
+      `https://inv.nadeko.net/latest_version?id=${ytVideoId}&itag=22`,
+      `https://invidious.nerdvpn.de/latest_version?id=${ytVideoId}&itag=22`,
+      `https://yt.drgnz.club/latest_version?id=${ytVideoId}&itag=22`,
+      `https://invidious.flokinet.to/latest_version?id=${ytVideoId}&itag=22`
+    ];
+
+    for (const streamUrl of directStreamEndpoints) {
+      try {
+        const streamRes = await fetch(streamUrl, {
+          signal: AbortSignal.timeout(4000),
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+          }
+        });
+
+        if (streamRes.ok) {
+          res.setHeader('Content-Type', 'video/mp4');
+          if (streamRes.headers.get('content-length')) {
+            res.setHeader('Content-Length', streamRes.headers.get('content-length'));
+          }
+          res.setHeader('Accept-Ranges', 'bytes');
+          res.status(200);
+
+          const arrayBuffer = await streamRes.arrayBuffer();
+          return res.send(Buffer.from(arrayBuffer));
+        }
+      } catch (e) {
+        continue;
+      }
+    }
+
+    // -------------------------------------------------------------
+    // 2. AŞAMA: Cobalt API Havuzu (Link Çözümleme + Stream Pipe)
+    // -------------------------------------------------------------
     const cobaltInstances = [
       'https://bergung.hoffnungfuerdiezukunft.net',
       'https://cobalt.canine.tools',
@@ -52,11 +90,9 @@ export default async function handler(req, res) {
       'https://cobalt.liubquanti.click'
     ];
 
-    let directStreamUrl = null;
-
     for (const instance of cobaltInstances) {
       try {
-        const response = await fetch(instance, {
+        const cobaltRes = await fetch(instance, {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
@@ -69,38 +105,31 @@ export default async function handler(req, res) {
           signal: AbortSignal.timeout(4000)
         });
 
-        if (response.ok) {
-          const data = await response.json();
-          directStreamUrl = data.url || data.picker?.[0]?.url;
-          if (directStreamUrl) break;
+        if (cobaltRes.ok) {
+          const cobaltData = await cobaltRes.json();
+          const directUrl = cobaltData.url || cobaltData.picker?.[0]?.url;
+
+          if (directUrl) {
+            const mediaRes = await fetch(directUrl, { signal: AbortSignal.timeout(5000) });
+            if (mediaRes.ok) {
+              res.setHeader('Content-Type', 'video/mp4');
+              if (mediaRes.headers.get('content-length')) {
+                res.setHeader('Content-Length', mediaRes.headers.get('content-length'));
+              }
+              res.setHeader('Accept-Ranges', 'bytes');
+              res.status(200);
+
+              const arrayBuffer = await mediaRes.arrayBuffer();
+              return res.send(Buffer.from(arrayBuffer));
+            }
+          }
         }
       } catch (e) {
         continue;
       }
     }
 
-    if (!directStreamUrl) {
-      return res.status(500).send("All Cobalt instances failed");
-    }
-
-    // YÖNLENDİRME YERİNE: Yayını doğrudan proxy (pipe) ederek HTTP 200 ile döndür
-    const streamResponse = await fetch(directStreamUrl);
-
-    if (!streamResponse.ok) {
-      return res.status(500).send("Failed to fetch direct video stream");
-    }
-
-    // Gerekli başlıkları aktar
-    res.setHeader('Content-Type', streamResponse.headers.get('content-type') || 'video/mp4');
-    if (streamResponse.headers.get('content-length')) {
-      res.setHeader('Content-Length', streamResponse.headers.get('content-length'));
-    }
-    res.setHeader('Accept-Ranges', 'bytes');
-    res.status(200);
-
-    // Stream verisini aktar
-    const arrayBuffer = await streamResponse.arrayBuffer();
-    return res.send(Buffer.from(arrayBuffer));
+    return res.status(500).send("All alternative stream sources failed.");
 
   } catch (error) {
     return res.status(500).send("Server Error: " + error.message);
