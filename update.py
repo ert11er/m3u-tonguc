@@ -1,7 +1,7 @@
 import json
 import os
-import sys
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import yt_dlp
 
 TARGET_YEAR = str(datetime.now().year)
@@ -26,98 +26,133 @@ ydl_opts = {
     'quiet': True,
     'no_warnings': True,
     'ignoreerrors': True,
-    'retries': 5,
+    'retries': 3,
     'hl': 'tr',
     'gl': 'TR'
 }
 
-output_data = {
-    "categories": [],
-    "series": []
-}
+def process_playlist(pl, category_id, category_name, ydl):
+    """Tek bir oynatma listesini çeken fonksiyon"""
+    if not pl:
+        return None
+    
+    pl_id = pl.get('id')
+    raw_pl_title = pl.get('title') or "Oynatma Listesi"
+    pl_title = str(raw_pl_title).replace('"', "'")
+    
+    if not pl_id:
+        return None
 
-series_id_counter = 1000
+    pl_url = f"https://www.youtube.com/playlist?list={pl_id}"
+    try:
+        pl_info = ydl.extract_info(pl_url, download=False) or {}
+    except Exception:
+        return None
 
-print("[START] Scraping started...")
+    entries = [e for e in (pl_info.get('entries') or []) if e]
+    if not entries:
+        return None
 
-with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    first_vid_id = entries[0].get('id')
+    cover = f"https://i.ytimg.com/vi/{first_vid_id}/hqdefault.jpg" if first_vid_id else ""
+
+    episodes = []
+    for idx, v in enumerate(entries, start=1):
+        vid = v.get('id')
+        if not vid:
+            continue
+
+        raw_v_title = v.get('title') or f"Bölüm {idx}"
+        v_title = str(raw_v_title).replace('"', "'")
+
+        episodes.append({
+            "id": f"{pl_id}_{idx}",
+            "episode_num": idx,
+            "title": v_title,
+            "container_extension": "mp4",
+            "url": f"https://invidious.nerdvpn.de/latest_version?id={vid}&itag=22",
+            "info": {
+                "movie_image": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
+            }
+        })
+
+    if episodes:
+        return {
+            "name": pl_title,
+            "cover": cover,
+            "category_id": str(category_id),
+            "category_name": category_name,
+            "episodes": episodes
+        }
+    return None
+
+def main():
+    print("[START] Hızlı tarama başlatıldı...")
+    output_data = {"categories": [], "series": []}
+    
     for ch in channels:
-        print(f"[CHANNEL] Processing {ch['name']}...")
-        
         output_data["categories"].append({
             "category_id": str(ch["category_id"]),
             "category_name": ch["name"]
         })
-        
-        target_url = f"https://www.youtube.com/channel/{ch['id']}/playlists"
-        try:
-            ch_info = ydl.extract_info(target_url, download=False) or {}
-        except Exception as e:
-            print(f"  [ERROR] Failed to fetch channel {ch['name']}: {e}")
-            continue
 
-        raw_playlists = ch_info.get('entries', [])
-        print(f"  [INFO] Found {len(raw_playlists)} playlists for {ch['name']}")
+    all_series = []
+    series_id_counter = 1000
 
-        for pl in raw_playlists:
-            if not pl: 
-                continue
-            
-            pl_id = pl.get('id')
-            raw_pl_title = pl.get('title') or f"Oynatma Listesi #{series_id_counter}"
-            pl_title = str(raw_pl_title).replace('"', "'")
-            
-            if not pl_id:
-                continue
-
-            pl_url = f"https://www.youtube.com/playlist?list={pl_id}"
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        for ch in channels:
+            print(f"[CHANNEL] Taraniyor: {ch['name']}...")
+            target_url = f"https://www.youtube.com/channel/{ch['id']}/playlists"
             try:
-                pl_info = ydl.extract_info(pl_url, download=False) or {}
-            except Exception:
+                ch_info = ydl.extract_info(target_url, download=False) or {}
+            except Exception as e:
+                print(f"  [ERROR] {ch['name']} alınamadı: {e}")
                 continue
 
-            entries = [e for e in (pl_info.get('entries') or []) if e]
-            if not entries:
-                continue
+            raw_playlists = ch_info.get('entries', [])
+            print(f"  [INFO] {ch['name']} için {len(raw_playlists)} oynatma listesi bulundu. Paralel çekiliyor...")
 
-            first_vid_id = entries[0].get('id')
-            cover = f"https://i.ytimg.com/vi/{first_vid_id}/hqdefault.jpg" if first_vid_id else ""
+            # Oynatma listelerini 8 eşzamanlı iş parçacığı (thread) ile çek
+            with ThreadPoolExecutor(max_workers=8) as executor:
+                futures = [
+                    executor.submit(process_playlist, pl, ch["category_id"], ch["name"], ydl)
+                    for pl in raw_playlists
+                ]
+                
+                for future in as_completed(futures):
+                    result = future.result()
+                    if result:
+                        result["series_id"] = series_id_counter
+                        all_series.append(result)
+                        series_id_counter += 1
 
-            episodes = []
-            for idx, v in enumerate(entries, start=1):
-                vid = v.get('id')
-                if not vid:
-                    continue
+    output_data["series"] = all_series
 
-                raw_v_title = v.get('title') or f"Bölüm {idx}"
-                v_title = str(raw_v_title).replace('"', "'")
+    os.makedirs("data", exist_ok=True)
+    with open("data/data.json", "w", encoding="utf-8") as f:
+        json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-                episodes.append({
-                    "id": f"{series_id_counter}{idx}",
-                    "episode_num": idx,
-                    "title": v_title,
-                    "container_extension": "mp4",
-                    "url": f"https://invidious.nerdvpn.de/latest_version?id={vid}&itag=22",
-                    "info": {
-                        "movie_image": f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"
-                    }
-                })
+    print(f"[DONE] Toplam {len(all_series)} Seri Başarıyla Kaydedildi!")
 
-            if episodes:
-                output_data["series"].append({
-                    "series_id": series_id_counter,
-                    "name": pl_title,
-                    "cover": cover,
-                    "category_id": str(ch["category_id"]),
-                    "category_name": ch["name"],
-                    "episodes": episodes
-                })
-                print(f"  [ADDED] {pl_title} ({len(episodes)} episodes)")
-                series_id_counter += 1
+    # M3U Dosyasını da Yerel Olarak Oluştur
+    m3u_content = '#EXTM3U x-tvg-url="" tvg-type="series"\n'
+    for s in all_series:
+        for ep in s["episodes"]:
+            m3u_content += (
+                f'#EXTINF:-1 tvg-logo="{ep["info"]["movie_image"]}" '
+                f'group-title="{s["category_name"]}" '
+                f'series-name="{s["name"]}" '
+                f'tvg-name="{s["name"]}" '
+                f'season="1" episode="{ep["episode_num"]}" '
+                f'cmd="series" tvg-type="series",S01E{String(ep["episode_num"]).zfill(2)} - {ep["title"]}\n'
+            )
+            m3u_content += f'#EXTGRP:{s["category_name"]}\n'
+            m3u_content += f'{ep["url"]}\n'
 
-# Write output file
-os.makedirs("data", exist_ok=True)
-with open("data/data.json", "w", encoding="utf-8") as f:
-    json.dump(output_data, f, ensure_ascii=False, indent=2)
+    with open("playlist.m3u", "w", encoding="utf-8") as f:
+        f.write(m3u_content)
+    print("[DONE] playlist.m3u dosyası da oluşturuldu!")
 
-print(f"[DONE] Total Series Saved: {len(output_data['series'])}")
+
+if __name__ == "__main__":
+    main()
