@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-export default async function handler(req, res) {
+export default function handler(req, res) {
   let streamId = req.query.stream_id;
 
   if (!streamId && req.url) {
@@ -43,7 +43,7 @@ export default async function handler(req, res) {
       return res.status(404).send(`Episode not found for ID: ${targetId}`);
     }
 
-    // Extract YouTube Video ID
+    // Extract raw YouTube Video ID
     let ytVideoId = null;
     const match = targetUrl.match(/[?&]v=([^&]+)/) || targetUrl.match(/[?&]id=([^&]+)/);
     if (match && match[1]) {
@@ -52,23 +52,10 @@ export default async function handler(req, res) {
       ytVideoId = targetId;
     }
 
-    // Query Piped API for direct stream streams
-    const pipedRes = await fetch(`https://pipedapi.kavin.rocks/streams/${ytVideoId}`);
-    if (pipedRes.ok) {
-      const pipedData = await pipedRes.json();
-      
-      // Look for a video+audio stream (720p or 360p MP4)
-      const stream = (pipedData.videoStreams || []).find(
-        s => s.mimeType?.includes('video/mp4') && s.videoOnly === false
-      ) || pipedData.videoStreams?.[0];
+    // Direct stream link from inv.nadeko.net (720p/360p video stream)
+    const directStreamUrl = `https://inv.nadeko.net/latest_version?id=${ytVideoId}&itag=22&listen=false`;
 
-      if (stream?.url) {
-        return res.redirect(302, stream.url);
-      }
-    }
-
-    // Fallback: Redirect directly to YouTube video URL if API fails
-    return res.redirect(302, `https://www.youtube.com/watch?v=${ytVideoId}`);
+    return res.redirect(302, directStreamUrl);
 
   } catch (error) {
     return res.status(500).send("Server Error: " + error.message);
