@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     streamId = streamId.join('/');
   }
 
-  // Uzantıyı temizle (.mp4, .ts vs.)
+  // Uzantıyı temizle (.mp4, .ts)
   const targetId = streamId.replace(/\.[^/.]+$/, "");
 
   try {
@@ -45,41 +45,36 @@ export default async function handler(req, res) {
 
     const videoUrl = `https://www.youtube.com/watch?v=${ytVideoId}`;
 
-    // Cobalt liubquanti API isteği
-    const cobaltEndpoints = [
-      'https://cobalt.liubquanti.click',
-      'https://cobalt.liubquanti.click/api/json'
-    ];
+    // Cobalt v11 API istek adresi
+    const cobaltUrl = 'https://api.cobalt.liubquanti.click';
 
-    for (const endpoint of cobaltEndpoints) {
-      try {
-        const cobaltRes = await fetch(endpoint, {
-          method: 'POST',
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            url: videoUrl,
-            videoQuality: '720'
-          }),
-          signal: AbortSignal.timeout(5000)
-        });
+    const cobaltRes = await fetch(cobaltUrl, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
+      },
+      body: JSON.stringify({
+        url: videoUrl,
+        videoQuality: '720'
+      })
+    });
 
-        if (cobaltRes.ok) {
-          const cobaltData = await cobaltRes.json();
-          const directStreamUrl = cobaltData.url || cobaltData.picker?.[0]?.url;
+    if (cobaltRes.ok) {
+      const cobaltData = await cobaltRes.json();
 
-          if (directStreamUrl) {
-            return res.redirect(302, directStreamUrl);
-          }
-        }
-      } catch (e) {
-        continue;
+      // v11 yanıt formatı kontrolü
+      const streamUrl = cobaltData.url || cobaltData.picker?.[0]?.url;
+
+      if (streamUrl) {
+        return res.redirect(302, streamUrl);
       }
     }
 
-    return res.status(500).send("Cobalt stream extraction failed");
+    const errText = await cobaltRes.text();
+    console.error("Cobalt Error Response:", errText);
+    return res.status(500).send("Cobalt Stream Error: " + errText);
 
   } catch (error) {
     return res.status(500).send("Server Error: " + error.message);
