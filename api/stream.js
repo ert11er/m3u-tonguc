@@ -95,7 +95,33 @@ export default async function handler(req, res) {
     }
 
     // =============================================================
-    // 2. ÖNCELİK: Invidious / Piped Sunucuları
+    // 2. ÖNCELİK: PHP / Server-Side yt-dlp Service (Harici PHP Sunucun Varsa)
+    // =============================================================
+    // Kendi PHP sunucun varsa aşağıdaki URL'i güncelleyebilirsin
+    const phpYtdlpServer = process.env.PHP_YTDLP_URL; // Örn: "https://myserver.com/get_stream.php?v="
+
+    if (phpYtdlpServer) {
+      try {
+        const phpRes = await fetch(`${phpYtdlpServer}${ytVideoId}`, { signal: AbortSignal.timeout(5000) });
+        if (phpRes.ok) {
+          const phpData = await phpRes.json();
+          if (phpData.url) {
+            const mediaRes = await fetch(phpData.url, { signal: AbortSignal.timeout(5000) });
+            if (mediaRes.ok) {
+              res.setHeader('Content-Type', 'video/mp4');
+              res.status(200);
+              const arrayBuffer = await mediaRes.arrayBuffer();
+              return res.send(Buffer.from(arrayBuffer));
+            }
+          }
+        }
+      } catch (e) {
+        // PHP servis hatası alırsa sıradakine geç
+      }
+    }
+
+    // =============================================================
+    // 3. ÖNCELİK: Invidious / Piped Sunucuları (yt-dlp Tabanlı)
     // =============================================================
     const invidiousEndpoints = [
       `https://inv.nadeko.net/latest_version?id=${ytVideoId}&itag=22`,
@@ -130,7 +156,7 @@ export default async function handler(req, res) {
     }
 
     // =============================================================
-    // 3. ÖNCELİK: Fix for Error 153 (YouTube No-Cookie Embed)
+    // 4. ÖNCELİK: YouTube No-Cookie Embed (WebView Fallback)
     // =============================================================
     const embedUrl = `https://www.youtube-nocookie.com/embed/${ytVideoId}?autoplay=1&modestbranding=1&rel=0&enablejsapi=1`;
     return res.redirect(302, embedUrl);
