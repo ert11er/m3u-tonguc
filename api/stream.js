@@ -17,6 +17,7 @@ export default async function handler(req, res) {
     streamId = streamId.join('/');
   }
 
+  // Uzantıyı temizle (.mp4, .ts vs.)
   const targetId = streamId.replace(/\.[^/.]+$/, "");
 
   try {
@@ -42,23 +43,40 @@ export default async function handler(req, res) {
       if (match && match[1]) ytVideoId = match[1];
     }
 
-    // Cobalt API isteği
-    const cobaltRes = await fetch('https://api.cobalt.tools/api/json', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        url: `https://www.youtube.com/watch?v=${ytVideoId}`,
-        vQuality: '720'
-      })
-    });
+    const videoUrl = `https://www.youtube.com/watch?v=${ytVideoId}`;
 
-    const cobaltData = await cobaltRes.json();
+    // Cobalt liubquanti API isteği
+    const cobaltEndpoints = [
+      'https://cobalt.liubquanti.click',
+      'https://cobalt.liubquanti.click/api/json'
+    ];
 
-    if (cobaltData.url) {
-      return res.redirect(302, cobaltData.url);
+    for (const endpoint of cobaltEndpoints) {
+      try {
+        const cobaltRes = await fetch(endpoint, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            url: videoUrl,
+            videoQuality: '720'
+          }),
+          signal: AbortSignal.timeout(5000)
+        });
+
+        if (cobaltRes.ok) {
+          const cobaltData = await cobaltRes.json();
+          const directStreamUrl = cobaltData.url || cobaltData.picker?.[0]?.url;
+
+          if (directStreamUrl) {
+            return res.redirect(302, directStreamUrl);
+          }
+        }
+      } catch (e) {
+        continue;
+      }
     }
 
     return res.status(500).send("Cobalt stream extraction failed");
