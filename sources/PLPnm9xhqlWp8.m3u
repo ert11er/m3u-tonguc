@@ -1,33 +1,35 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/TlDliDMHJoM/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="1",S01E01 - Canlılar Dünyasına Yolculuk 📗 3'ten 4'e Hazırlık Kampı #34FEN5 #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/TlDliDMHJoM/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="1",S01E01 - Canlılar Dünyasına Yolculuk 📗 3'ten 4'e Hazırlık Kampı #34FEN5 #2026
 https://invidious.nerdvpn.de/latest_version?id=TlDliDMHJoM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/gn_9_Scc-mw/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="2",S01E02 - Sözlü Dijital ve Görsel İçerikler 📙 3'ten 4'e Hazırlık Kampı #34TURK5 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/gn_9_Scc-mw/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="2",S01E02 - Sözlü Dijital ve Görsel İçerikler 📙 3'ten 4'e Hazırlık Kampı #34TURK5 #2026
 https://invidious.nerdvpn.de/latest_version?id=gn_9_Scc-mw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dPZeQgD07Cc/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="3",S01E03 - Uzunluk - Çevre - Alan - Tartma ve Sıvı Ölçme 📘 3'ten 4'e Hazırlık Kampı #34MAT5 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dPZeQgD07Cc/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="3",S01E03 - Uzunluk - Çevre - Alan - Tartma ve Sıvı Ölçme 📘 3'ten 4'e Hazırlık Kampı #34MAT5 #2026
 https://invidious.nerdvpn.de/latest_version?id=dPZeQgD07Cc&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hvoUIGQVX9E/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="4",S01E04 - Çevremizdeki Işık ve Sesler 📗 3'ten 4'e Hazırlık Kampı #34FEN4 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hvoUIGQVX9E/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="4",S01E04 - Çevremizdeki Işık ve Sesler 📗 3'ten 4'e Hazırlık Kampı #34FEN4 #2026
 https://invidious.nerdvpn.de/latest_version?id=hvoUIGQVX9E&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/FN3Yj8MKGYM/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="5",S01E05 - Yazım Kuralları ve Noktalama İşaretleri 📙 3'ten 4'e Hazırlık Kampı #34TURK4 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/FN3Yj8MKGYM/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="5",S01E05 - Yazım Kuralları ve Noktalama İşaretleri 📙 3'ten 4'e Hazırlık Kampı #34TURK4 #2026
 https://invidious.nerdvpn.de/latest_version?id=FN3Yj8MKGYM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/QKnhoak-RxE/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="6",S01E06 - Geometrik Cisimler ve Şekiller Geometride Temel Kavramlar 📘 3'ten 4'e Hazırlık Kampı #34MAT4 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/QKnhoak-RxE/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="6",S01E06 - Geometrik Cisimler ve Şekiller Geometride Temel Kavramlar 📘 3'ten 4'e Hazırlık Kampı #34MAT4 #2026
 https://invidious.nerdvpn.de/latest_version?id=QKnhoak-RxE&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/J7DYNnX47CY/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="7",S01E07 - Maddeyi Tanıyalım 📗 3'ten 4'e Hazırlık Kampı #34FEN3 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/J7DYNnX47CY/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="7",S01E07 - Maddeyi Tanıyalım 📗 3'ten 4'e Hazırlık Kampı #34FEN3 #2026
 https://invidious.nerdvpn.de/latest_version?id=J7DYNnX47CY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/TZ85N8HN06o/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="8",S01E08 - Metinde Anlam 📙 3'ten 4'e Hazırlık Kampı #34TURK3 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/TZ85N8HN06o/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="8",S01E08 - Metinde Anlam 📙 3'ten 4'e Hazırlık Kampı #34TURK3 #2026
 https://invidious.nerdvpn.de/latest_version?id=TZ85N8HN06o&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/xoOKrNwW9Lg/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="9",S01E09 - Kesirler - Zaman Ölçme - Veri Toplama ve Değerlendirme 📘 3'ten 4'e Hazırlık Kampı #34MAT3 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/xoOKrNwW9Lg/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="9",S01E09 - Kesirler - Zaman Ölçme - Veri Toplama ve Değerlendirme 📘 3'ten 4'e Hazırlık Kampı #34MAT3 #2026
 https://invidious.nerdvpn.de/latest_version?id=xoOKrNwW9Lg&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/XPIWtgtIUcY/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="10",S01E10 - Kuvveti Tanıyalım 📗 3'ten 4'e Hazırlık Kampı #34FEN2 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/XPIWtgtIUcY/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="10",S01E10 - Kuvveti Tanıyalım 📗 3'ten 4'e Hazırlık Kampı #34FEN2 #2026
 https://invidious.nerdvpn.de/latest_version?id=XPIWtgtIUcY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/JaOAyxGLxtM/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="11",S01E11 - Cümlede Anlam 📙 3'ten 4'e Hazırlık Kampı #34TURK2 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/JaOAyxGLxtM/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="11",S01E11 - Cümlede Anlam 📙 3'ten 4'e Hazırlık Kampı #34TURK2 #2026
 https://invidious.nerdvpn.de/latest_version?id=JaOAyxGLxtM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/E9Ntr4_PCQg/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="12",S01E12 - Doğal Sayılarla Çarpma ve Bölme İşlemleri 📘 3'ten 4'e Hazırlık Kampı #34MAT2 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/E9Ntr4_PCQg/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="12",S01E12 - Doğal Sayılarla Çarpma ve Bölme İşlemleri 📘 3'ten 4'e Hazırlık Kampı #34MAT2 #2026
 https://invidious.nerdvpn.de/latest_version?id=E9Ntr4_PCQg&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hh2XYkc9hlE/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="13",S01E13 - Gezegenimizi Tanıyalım 📗 3'ten 4'e Hazırlık Kampı #34FEN1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hh2XYkc9hlE/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="13",S01E13 - Gezegenimizi Tanıyalım 📗 3'ten 4'e Hazırlık Kampı #34FEN1 #2026
 https://invidious.nerdvpn.de/latest_version?id=hh2XYkc9hlE&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/d2PBNVSSsN4/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="14",S01E14 - Sözcükte Anlam 📙 3'ten 4'e Hazırlık Kampı #34TURK1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/d2PBNVSSsN4/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="14",S01E14 - Sözcükte Anlam 📙 3'ten 4'e Hazırlık Kampı #34TURK1 #2026
 https://invidious.nerdvpn.de/latest_version?id=d2PBNVSSsN4&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/jUxjDqH82QA/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="15",S01E15 - CANLI 🔴 3'ten 4'e Hazırlık Yaz Kampına HOŞ GELDİN ❗😊
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/jUxjDqH82QA/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="15",S01E15 - CANLI 🔴 3'ten 4'e Hazırlık Yaz Kampına HOŞ GELDİN ❗😊
 https://invidious.nerdvpn.de/latest_version?id=jUxjDqH82QA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/p5dMPwtgEco/maxresdefault.jpg" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" season="1" episode="16",S01E16 - Doğal Sayılar ve Doğal Sayılarla Toplama ve Çıkarma 📘 3'ten 4'e Hazırlık Kampı #34MAT1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/p5dMPwtgEco/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="16",S01E16 - Doğal Sayılar ve Doğal Sayılarla Toplama ve Çıkarma 📘 3'ten 4'e Hazırlık Kampı #34MAT1 #2026
 https://invidious.nerdvpn.de/latest_version?id=p5dMPwtgEco&itag=22

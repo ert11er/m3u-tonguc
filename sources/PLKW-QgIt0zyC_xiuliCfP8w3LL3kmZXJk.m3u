@@ -1,9 +1,11 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wKfnvbTMb3U/maxresdefault.jpg" series-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" season="1" episode="1",S01E01 - 1. Sınıf Hayat Bilgisi 1. Dönem Etkinliği 🔁 #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wKfnvbTMb3U/maxresdefault.jpg" group-title="1. Sınıf" series-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" tvg-type="series" season="1" episode="1",S01E01 - 1. Sınıf Hayat Bilgisi 1. Dönem Etkinliği 🔁 #2026
 https://invidious.nerdvpn.de/latest_version?id=wKfnvbTMb3U&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/I38F2jiVo2E/maxresdefault.jpg" series-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" season="1" episode="2",S01E02 - Beraber Süre Tutarak Okuma Çalışması Yapıyoruz - 2 📚
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/I38F2jiVo2E/maxresdefault.jpg" group-title="1. Sınıf" series-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" tvg-type="series" season="1" episode="2",S01E02 - Beraber Süre Tutarak Okuma Çalışması Yapıyoruz - 2 📚
 https://invidious.nerdvpn.de/latest_version?id=I38F2jiVo2E&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/t6w7sZYn_vI/maxresdefault.jpg" series-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" season="1" episode="3",S01E03 - 1. Sınıf Matematik 1. Dönem Etkinliği 🔁 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/t6w7sZYn_vI/maxresdefault.jpg" group-title="1. Sınıf" series-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" tvg-type="series" season="1" episode="3",S01E03 - 1. Sınıf Matematik 1. Dönem Etkinliği 🔁 #2026
 https://invidious.nerdvpn.de/latest_version?id=t6w7sZYn_vI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/PVEoPkEA5M0/maxresdefault.jpg" series-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" season="1" episode="4",S01E04 - Beraber Süre Tutarak Okuma Çalışması Yapıyoruz 📚
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/PVEoPkEA5M0/maxresdefault.jpg" group-title="1. Sınıf" series-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" tvg-type="series" season="1" episode="4",S01E04 - Beraber Süre Tutarak Okuma Çalışması Yapıyoruz 📚
 https://invidious.nerdvpn.de/latest_version?id=PVEoPkEA5M0&itag=22

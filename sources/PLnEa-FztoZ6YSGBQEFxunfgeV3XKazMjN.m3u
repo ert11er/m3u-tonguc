@@ -1,15 +1,17 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/YzrkFwRlhTo/maxresdefault.jpg" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" season="1" episode="1",S01E01 - 10. Sınıf Fizik 1. Dönem Full Tekrar 🔁 #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/YzrkFwRlhTo/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-type="series" season="1" episode="1",S01E01 - 10. Sınıf Fizik 1. Dönem Full Tekrar 🔁 #2026
 https://invidious.nerdvpn.de/latest_version?id=YzrkFwRlhTo&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4127UnKIQ5c/maxresdefault.jpg" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" season="1" episode="2",S01E02 - 10. Sınıf Tarih 1. Dönem Full Tekrar 🔁 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4127UnKIQ5c/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-type="series" season="1" episode="2",S01E02 - 10. Sınıf Tarih 1. Dönem Full Tekrar 🔁 #2026
 https://invidious.nerdvpn.de/latest_version?id=4127UnKIQ5c&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/qHRXfKDhjm4/maxresdefault.jpg" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" season="1" episode="3",S01E03 - 10. Sınıf Matematik 1. Dönem Full Tekrar 🔃 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/qHRXfKDhjm4/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-type="series" season="1" episode="3",S01E03 - 10. Sınıf Matematik 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=qHRXfKDhjm4&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Ft_6n6zJFZI/maxresdefault.jpg" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" season="1" episode="4",S01E04 - 10. Sınıf Edebiyat 1. Dönem Full Tekrar 🔃 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Ft_6n6zJFZI/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-type="series" season="1" episode="4",S01E04 - 10. Sınıf Edebiyat 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=Ft_6n6zJFZI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/R0d4xIhkJPA/maxresdefault.jpg" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" season="1" episode="5",S01E05 - 10. Sınıf Coğrafya 1. Dönem Full Tekrar 🔃 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/R0d4xIhkJPA/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-type="series" season="1" episode="5",S01E05 - 10. Sınıf Coğrafya 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=R0d4xIhkJPA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/MO9UK2QDjkw/maxresdefault.jpg" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" season="1" episode="6",S01E06 - 10. Sınıf Biyoloji 1. Dönem Full Tekrar 🔃 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/MO9UK2QDjkw/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-type="series" season="1" episode="6",S01E06 - 10. Sınıf Biyoloji 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=MO9UK2QDjkw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/JTAY0spK2U0/maxresdefault.jpg" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" season="1" episode="7",S01E07 - 10. Sınıf Kimya 1. Dönem Full Tekrar 🔃 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/JTAY0spK2U0/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-type="series" season="1" episode="7",S01E07 - 10. Sınıf Kimya 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=JTAY0spK2U0&itag=22

@@ -1,11 +1,13 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/RhsdKOXqPfk/maxresdefault.jpg" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" season="1" episode="1",S01E01 - 4. Sınıf İngilizce 1. Dönem Full Tekrar 🔃 #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/RhsdKOXqPfk/maxresdefault.jpg" group-title="4. Sınıf" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-type="series" season="1" episode="1",S01E01 - 4. Sınıf İngilizce 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=RhsdKOXqPfk&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/q3eQ9ZSGZ5o/maxresdefault.jpg" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" season="1" episode="2",S01E02 - 4. Sınıf Fen 1. Dönem Full Tekrar 🔃 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/q3eQ9ZSGZ5o/maxresdefault.jpg" group-title="4. Sınıf" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-type="series" season="1" episode="2",S01E02 - 4. Sınıf Fen 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=q3eQ9ZSGZ5o&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NJ65dVxNS5I/maxresdefault.jpg" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" season="1" episode="3",S01E03 - 4. Sınıf Türkçe 1. Dönem Full Tekrar 🔃 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NJ65dVxNS5I/maxresdefault.jpg" group-title="4. Sınıf" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-type="series" season="1" episode="3",S01E03 - 4. Sınıf Türkçe 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=NJ65dVxNS5I&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/339Ms1TBbL0/maxresdefault.jpg" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" season="1" episode="4",S01E04 - 4. Sınıf Sosyal 1. Dönem Full Tekrar 🔃 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/339Ms1TBbL0/maxresdefault.jpg" group-title="4. Sınıf" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-type="series" season="1" episode="4",S01E04 - 4. Sınıf Sosyal 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=339Ms1TBbL0&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/I8S-1q4FZUs/maxresdefault.jpg" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" season="1" episode="5",S01E05 - 4. Sınıf Matematik 1. Dönem Full Tekrar 🔃 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/I8S-1q4FZUs/maxresdefault.jpg" group-title="4. Sınıf" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-type="series" season="1" episode="5",S01E05 - 4. Sınıf Matematik 1. Dönem Full Tekrar 🔃 #2026
 https://invidious.nerdvpn.de/latest_version?id=I8S-1q4FZUs&itag=22

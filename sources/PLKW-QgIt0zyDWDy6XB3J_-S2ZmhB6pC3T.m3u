@@ -1,51 +1,53 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/KZ8JLcXiU_I/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="1",S01E01 - Bilmeceden Teknolojiye 📕 1'den 2'ye Hazırlık Kampı #12HBIL8 #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/KZ8JLcXiU_I/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="1",S01E01 - Bilmeceden Teknolojiye 📕 1'den 2'ye Hazırlık Kampı #12HBIL8 #2026
 https://invidious.nerdvpn.de/latest_version?id=KZ8JLcXiU_I&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/pFIAFhKYv64/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="2",S01E02 - Metin Türleri 📙 1'den 2'ye Hazırlık Kampı #12TURK8 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/pFIAFhKYv64/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="2",S01E02 - Metin Türleri 📙 1'den 2'ye Hazırlık Kampı #12TURK8 #2026
 https://invidious.nerdvpn.de/latest_version?id=pFIAFhKYv64&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/nUgfT-6CZ4w/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="3",S01E03 - Görsel Dikkat 📘 1'den 2'ye Hazırlık Kampı #12MAT8 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/nUgfT-6CZ4w/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="3",S01E03 - Görsel Dikkat 📘 1'den 2'ye Hazırlık Kampı #12MAT8 #2026
 https://invidious.nerdvpn.de/latest_version?id=nUgfT-6CZ4w&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/2uC4effNa-E/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="4",S01E04 - ⁠Şehirlerle Okuyorum 📕 1'den 2'ye Hazırlık Kampı #12HBIL7 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/2uC4effNa-E/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="4",S01E04 - ⁠Şehirlerle Okuyorum 📕 1'den 2'ye Hazırlık Kampı #12HBIL7 #2026
 https://invidious.nerdvpn.de/latest_version?id=2uC4effNa-E&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/5_fou52OrxM/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="5",S01E05 - Olayların Oluş Sırası - Kurallar - Yönergeler 📙 1'den 2'ye Hazırlık Kampı #12TURK7 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/5_fou52OrxM/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="5",S01E05 - Olayların Oluş Sırası - Kurallar - Yönergeler 📙 1'den 2'ye Hazırlık Kampı #12TURK7 #2026
 https://invidious.nerdvpn.de/latest_version?id=5_fou52OrxM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mVyoJnG6szU/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="6",S01E06 - Veri Toplama ve Değerlendirme 📘 1'den 2'ye Hazırlık Kampı #12MAT7 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mVyoJnG6szU/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="6",S01E06 - Veri Toplama ve Değerlendirme 📘 1'den 2'ye Hazırlık Kampı #12MAT7 #2026
 https://invidious.nerdvpn.de/latest_version?id=mVyoJnG6szU&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/KeJrHAEpQRs/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="7",S01E07 - Bilim Teknoloji ve Sanat 📕 1'den 2'ye Hazırlık Kampı #12HBIL6 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/KeJrHAEpQRs/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="7",S01E07 - Bilim Teknoloji ve Sanat 📕 1'den 2'ye Hazırlık Kampı #12HBIL6 #2026
 https://invidious.nerdvpn.de/latest_version?id=KeJrHAEpQRs&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/z1Vbcf7Q1VU/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="8",S01E08 - Noktalama İşaretleri 📙 1'den 2'ye Hazırlık Kampı #12TURK6 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/z1Vbcf7Q1VU/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="8",S01E08 - Noktalama İşaretleri 📙 1'den 2'ye Hazırlık Kampı #12TURK6 #2026
 https://invidious.nerdvpn.de/latest_version?id=z1Vbcf7Q1VU&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NbQdS8BWgOU/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="9",S01E09 - Nesneler ve Geometrik Şekiller 📘 1'den 2'ye Hazırlık Kampı #12MAT6 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NbQdS8BWgOU/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="9",S01E09 - Nesneler ve Geometrik Şekiller 📘 1'den 2'ye Hazırlık Kampı #12MAT6 #2026
 https://invidious.nerdvpn.de/latest_version?id=NbQdS8BWgOU&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AId30Pkei4Q/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="10",S01E10 - Doğa ve Çevre 📕 1'den 2'ye Hazırlık Kampı #12HBIL5 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AId30Pkei4Q/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="10",S01E10 - Doğa ve Çevre 📕 1'den 2'ye Hazırlık Kampı #12HBIL5 #2026
 https://invidious.nerdvpn.de/latest_version?id=AId30Pkei4Q&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/JcfcoZGIJA0/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="11",S01E11 - Eşleştirme ve Gruplandırma 📙 1'den 2'ye Hazırlık Kampı #12TURK5 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/JcfcoZGIJA0/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="11",S01E11 - Eşleştirme ve Gruplandırma 📙 1'den 2'ye Hazırlık Kampı #12TURK5 #2026
 https://invidious.nerdvpn.de/latest_version?id=JcfcoZGIJA0&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/RvhogRBYDUk/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="12",S01E12 - Paralarımız 📘 1'den 2'ye Hazırlık Kampı #12MAT5 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/RvhogRBYDUk/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="12",S01E12 - Paralarımız 📘 1'den 2'ye Hazırlık Kampı #12MAT5 #2026
 https://invidious.nerdvpn.de/latest_version?id=RvhogRBYDUk&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/v1UFFvLfXAA/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="13",S01E13 - Yaşadığım Yer ve Ülkem 📕 1'den 2'ye Hazırlık Kampı #12HBIL4 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/v1UFFvLfXAA/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="13",S01E13 - Yaşadığım Yer ve Ülkem 📕 1'den 2'ye Hazırlık Kampı #12HBIL4 #2026
 https://invidious.nerdvpn.de/latest_version?id=v1UFFvLfXAA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/6CIwgl1cjPI/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="14",S01E14 - Metin Bilgisi ve Metin Tamamlama 📙 1'den 2'ye Hazırlık Kampı #12TURK4 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/6CIwgl1cjPI/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="14",S01E14 - Metin Bilgisi ve Metin Tamamlama 📙 1'den 2'ye Hazırlık Kampı #12TURK4 #2026
 https://invidious.nerdvpn.de/latest_version?id=6CIwgl1cjPI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/X7-eRf6fsxA/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="15",S01E15 - Toplama ve Çıkarma İşlemi 📘 1'den 2'ye Hazırlık Kampı #12MAT4 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/X7-eRf6fsxA/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="15",S01E15 - Toplama ve Çıkarma İşlemi 📘 1'den 2'ye Hazırlık Kampı #12MAT4 #2026
 https://invidious.nerdvpn.de/latest_version?id=X7-eRf6fsxA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0Umi1DZLIVc/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="16",S01E16 - Ailem ve Toplum 📕 1'den 2'ye Hazırlık Kampı #12HBIL3 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0Umi1DZLIVc/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="16",S01E16 - Ailem ve Toplum 📕 1'den 2'ye Hazırlık Kampı #12HBIL3 #2026
 https://invidious.nerdvpn.de/latest_version?id=0Umi1DZLIVc&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/finaRjLEvYs/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="17",S01E17 - Cümle 📙 1'den 2'ye Hazırlık Kampı #12TURK3 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/finaRjLEvYs/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="17",S01E17 - Cümle 📙 1'den 2'ye Hazırlık Kampı #12TURK3 #2026
 https://invidious.nerdvpn.de/latest_version?id=finaRjLEvYs&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/5_n2d7fx0Aw/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="18",S01E18 - Uzunluk Ölçme ve Tartma 📘 1'den 2'ye Hazırlık Kampı #12MAT3 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/5_n2d7fx0Aw/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="18",S01E18 - Uzunluk Ölçme ve Tartma 📘 1'den 2'ye Hazırlık Kampı #12MAT3 #2026
 https://invidious.nerdvpn.de/latest_version?id=5_n2d7fx0Aw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/euio30i17jQ/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="19",S01E19 - Sağlığım ve Güvenliğim 📕 1'den 2'ye Hazırlık Kampı #12HBIL2 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/euio30i17jQ/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="19",S01E19 - Sağlığım ve Güvenliğim 📕 1'den 2'ye Hazırlık Kampı #12HBIL2 #2026
 https://invidious.nerdvpn.de/latest_version?id=euio30i17jQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/7VAhApdDV9Q/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="20",S01E20 - Hece - Sözcük 📙 1'den 2'ye Hazırlık Kampı #12TURK2 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/7VAhApdDV9Q/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="20",S01E20 - Hece - Sözcük 📙 1'den 2'ye Hazırlık Kampı #12TURK2 #2026
 https://invidious.nerdvpn.de/latest_version?id=7VAhApdDV9Q&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/w6gBmoPxK3s/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="21",S01E21 - Rakamlar ve Sayılar 📘 1'den 2'ye Hazırlık Kampı #12MAT2 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/w6gBmoPxK3s/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="21",S01E21 - Rakamlar ve Sayılar 📘 1'den 2'ye Hazırlık Kampı #12MAT2 #2026
 https://invidious.nerdvpn.de/latest_version?id=w6gBmoPxK3s&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/lclfGqs74KE/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="22",S01E22 - Ben ve Okulum 📕 1'den 2'ye Hazırlık Kampı #12HBIL1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/lclfGqs74KE/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="22",S01E22 - Ben ve Okulum 📕 1'den 2'ye Hazırlık Kampı #12HBIL1 #2026
 https://invidious.nerdvpn.de/latest_version?id=lclfGqs74KE&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mWYoAh6RC7A/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="23",S01E23 - Harf Hece ve Sözcük Sırası 📙 1'den 2'ye Hazırlık Kampı #12TURK1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mWYoAh6RC7A/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="23",S01E23 - Harf Hece ve Sözcük Sırası 📙 1'den 2'ye Hazırlık Kampı #12TURK1 #2026
 https://invidious.nerdvpn.de/latest_version?id=mWYoAh6RC7A&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/eLEnZY5sRiQ/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="24",S01E24 - CANLI 🔴 1'den 2'ye Hazırlık Yaz Kampına HOŞ GELDİN ❗😊
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/eLEnZY5sRiQ/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="24",S01E24 - CANLI 🔴 1'den 2'ye Hazırlık Yaz Kampına HOŞ GELDİN ❗😊
 https://invidious.nerdvpn.de/latest_version?id=eLEnZY5sRiQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/G5z9u8IjQw0/maxresdefault.jpg" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" season="1" episode="25",S01E25 - Uzamsal İlişkiler ve Eş Nesneler 📘 1'den 2'ye Hazırlık Kampı #12MAT1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/G5z9u8IjQw0/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="25",S01E25 - Uzamsal İlişkiler ve Eş Nesneler 📘 1'den 2'ye Hazırlık Kampı #12MAT1 #2026
 https://invidious.nerdvpn.de/latest_version?id=G5z9u8IjQw0&itag=22

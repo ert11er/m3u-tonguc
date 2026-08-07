@@ -1,29 +1,31 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/asy4V06EsqQ/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="1",S01E01 - Basit Elektrik Devreleri 📗 4. Sınıf Fen #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/asy4V06EsqQ/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="1",S01E01 - Basit Elektrik Devreleri 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=asy4V06EsqQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/_Z----wuLR8/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="2",S01E02 - Bilinçli Tüketici 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/_Z----wuLR8/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="2",S01E02 - Bilinçli Tüketici 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=_Z----wuLR8&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/eiJJpIO7QcI/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="3",S01E03 - Ses Kirliliği 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/eiJJpIO7QcI/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="3",S01E03 - Ses Kirliliği 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=eiJJpIO7QcI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/lmYaGcPT2YU/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="4",S01E04 - Ses Teknolojileri 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/lmYaGcPT2YU/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="4",S01E04 - Ses Teknolojileri 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=lmYaGcPT2YU&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/cLOdOK2tD3g/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="5",S01E05 - Işık Kirliliği 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/cLOdOK2tD3g/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="5",S01E05 - Işık Kirliliği 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=cLOdOK2tD3g&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/lp5PJjAIAIU/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="6",S01E06 - Aydınlatma Teknolojileri ve Uygun Aydınlatma 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/lp5PJjAIAIU/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="6",S01E06 - Aydınlatma Teknolojileri ve Uygun Aydınlatma 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=lp5PJjAIAIU&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/aD7EHg4NPHI/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="7",S01E07 - Saf Madde ve Karışım 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/aD7EHg4NPHI/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="7",S01E07 - Saf Madde ve Karışım 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=aD7EHg4NPHI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Vq0fZnbRLb8/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="8",S01E08 - Maddenin Isı ile Etkileşimi 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Vq0fZnbRLb8/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="8",S01E08 - Maddenin Isı ile Etkileşimi 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=Vq0fZnbRLb8&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/U0XIK0hKohk/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="9",S01E09 - Maddeyi Niteleyen Özellikler ve Ölçülebilir Özellikleri 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/U0XIK0hKohk/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="9",S01E09 - Maddeyi Niteleyen Özellikler ve Ölçülebilir Özellikleri 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=U0XIK0hKohk&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/8GFLk9Xou_U/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="10",S01E10 - Mıknatısların Uyguladığı Kuvvet 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/8GFLk9Xou_U/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="10",S01E10 - Mıknatısların Uyguladığı Kuvvet 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=8GFLk9Xou_U&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mHcP3jQs4DY/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="11",S01E11 - Kuvvetin Etkileri 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mHcP3jQs4DY/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="11",S01E11 - Kuvvetin Etkileri 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=mHcP3jQs4DY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/LJ8L1hF2DDc/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="12",S01E12 - Besinler ve Özellikleri 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/LJ8L1hF2DDc/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="12",S01E12 - Besinler ve Özellikleri 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=LJ8L1hF2DDc&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/z5llO3slDzQ/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="13",S01E13 - Dünyamızın Hareketleri 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/z5llO3slDzQ/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="13",S01E13 - Dünyamızın Hareketleri 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=z5llO3slDzQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/J8XSM5OMHro/maxresdefault.jpg" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" season="1" episode="14",S01E14 - Yer Kabuğunun Yapısı 📗 4. Sınıf Fen #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/J8XSM5OMHro/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" season="1" episode="14",S01E14 - Yer Kabuğunun Yapısı 📗 4. Sınıf Fen #2026
 https://invidious.nerdvpn.de/latest_version?id=J8XSM5OMHro&itag=22

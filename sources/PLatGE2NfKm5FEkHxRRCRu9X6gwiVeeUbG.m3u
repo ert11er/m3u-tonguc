@@ -1,17 +1,19 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/M0MYWkEPK1A/maxresdefault.jpg" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="1",S01E01 - YARINKİ ÜLKE GENELİ EDEBİYAT SINAVINA HAZIRLIK ✍🏻 9. SINIF #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/M0MYWkEPK1A/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="1",S01E01 - YARINKİ ÜLKE GENELİ EDEBİYAT SINAVINA HAZIRLIK ✍🏻 9. SINIF #2026
 https://invidious.nerdvpn.de/latest_version?id=M0MYWkEPK1A&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hyEezhMQ9Tk/maxresdefault.jpg" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="2",S01E02 - 9. Sınıf Tarih 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hyEezhMQ9Tk/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="2",S01E02 - 9. Sınıf Tarih 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=hyEezhMQ9Tk&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0xKqiaNWVxg/maxresdefault.jpg" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="3",S01E03 - 9. Sınıf Fizik 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0xKqiaNWVxg/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="3",S01E03 - 9. Sınıf Fizik 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=0xKqiaNWVxg&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-taAXnl-MZE/maxresdefault.jpg" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="4",S01E04 - 9. Sınıf Biyoloji 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-taAXnl-MZE/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="4",S01E04 - 9. Sınıf Biyoloji 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=-taAXnl-MZE&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/m8nIg8dTf-M/maxresdefault.jpg" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="5",S01E05 - 9. Sınıf Coğrafya 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/m8nIg8dTf-M/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="5",S01E05 - 9. Sınıf Coğrafya 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=m8nIg8dTf-M&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mu1Ni-SsUhs/maxresdefault.jpg" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="6",S01E06 - 9. Sınıf Matematik 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mu1Ni-SsUhs/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="6",S01E06 - 9. Sınıf Matematik 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=mu1Ni-SsUhs&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dos2n5Tk0gw/maxresdefault.jpg" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="7",S01E07 - 9. Sınıf Edebiyat 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dos2n5Tk0gw/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="7",S01E07 - 9. Sınıf Edebiyat 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=dos2n5Tk0gw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/_WnmGJVwE70/maxresdefault.jpg" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="8",S01E08 - 9. Sınıf Kimya 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/_WnmGJVwE70/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="8",S01E08 - 9. Sınıf Kimya 2. Dönem 2. Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=_WnmGJVwE70&itag=22

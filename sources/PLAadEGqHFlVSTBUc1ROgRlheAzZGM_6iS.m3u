@@ -1,13 +1,15 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/7OZb1Flsnzg/maxresdefault.jpg" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="1",S01E01 - 11.Sınıf Tarih 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/7OZb1Flsnzg/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="1",S01E01 - 11.Sınıf Tarih 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=7OZb1Flsnzg&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/VYoEHCORvJE/maxresdefault.jpg" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="2",S01E02 - 11.Sınıf Fizik 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/VYoEHCORvJE/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="2",S01E02 - 11.Sınıf Fizik 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=VYoEHCORvJE&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/9wOsFcwK4_I/maxresdefault.jpg" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="3",S01E03 - 11.Sınıf Biyoloji 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/9wOsFcwK4_I/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="3",S01E03 - 11.Sınıf Biyoloji 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=9wOsFcwK4_I&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wg5CbmxkyPY/maxresdefault.jpg" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="4",S01E04 - 11.Sınıf Coğrafya 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wg5CbmxkyPY/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="4",S01E04 - 11.Sınıf Coğrafya 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=wg5CbmxkyPY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/zST7Vk5LLSQ/maxresdefault.jpg" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="5",S01E05 - 11.Sınıf Matematik 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/zST7Vk5LLSQ/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="5",S01E05 - 11.Sınıf Matematik 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=zST7Vk5LLSQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mZMf-GCIx-U/maxresdefault.jpg" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" season="1" episode="6",S01E06 - 11.Sınıf Edebiyat 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mZMf-GCIx-U/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="6",S01E06 - 11.Sınıf Edebiyat 2.Dönem 2.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=mZMf-GCIx-U&itag=22

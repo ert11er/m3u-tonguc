@@ -1,43 +1,45 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NEOOZJ2FXBk/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="1",S01E01 - Metin Türleri ve Söz Sanatları 📙 7'den 8'e Hazırlık Kampı #78TURK6 #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NEOOZJ2FXBk/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="1",S01E01 - Metin Türleri ve Söz Sanatları 📙 7'den 8'e Hazırlık Kampı #78TURK6 #2026
 https://invidious.nerdvpn.de/latest_version?id=NEOOZJ2FXBk&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/FJt0n5yC2qY/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="2",S01E02 - Geometrik Cisimler 📘 7'den 8'e Hazırlık Kampı #78MAT7 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/FJt0n5yC2qY/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="2",S01E02 - Geometrik Cisimler 📘 7'den 8'e Hazırlık Kampı #78MAT7 #2026
 https://invidious.nerdvpn.de/latest_version?id=FJt0n5yC2qY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Wm7yBXsoOYY/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="3",S01E03 - Yazım Kuralları ve Noktalama İşaretleri 📙 7'den 8'e Hazırlık Kampı #78TURK5 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Wm7yBXsoOYY/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="3",S01E03 - Yazım Kuralları ve Noktalama İşaretleri 📙 7'den 8'e Hazırlık Kampı #78TURK5 #2026
 https://invidious.nerdvpn.de/latest_version?id=Wm7yBXsoOYY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/k6CWsWvV7sE/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="4",S01E04 - Elektrik Yükleri ve Elektrik Enerjisi 📗 7'den 8'e Hazırlık Kampı #78FEN8 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/k6CWsWvV7sE/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="4",S01E04 - Elektrik Yükleri ve Elektrik Enerjisi 📗 7'den 8'e Hazırlık Kampı #78FEN8 #2026
 https://invidious.nerdvpn.de/latest_version?id=k6CWsWvV7sE&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/8Q2os5la27g/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="5",S01E05 - Üçgenler 📘 7'den 8'e Hazırlık Kampı #78MAT6 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/8Q2os5la27g/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="5",S01E05 - Üçgenler 📘 7'den 8'e Hazırlık Kampı #78MAT6 #2026
 https://invidious.nerdvpn.de/latest_version?id=8Q2os5la27g&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/BQusdunoGLI/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="6",S01E06 - Parçada Anlam Anlatım ve Yapı 📙 7'den 8'e Hazırlık Kampı #78TURK4 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/BQusdunoGLI/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="6",S01E06 - Parçada Anlam Anlatım ve Yapı 📙 7'den 8'e Hazırlık Kampı #78TURK4 #2026
 https://invidious.nerdvpn.de/latest_version?id=BQusdunoGLI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/qW7rBtSlOZY/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="7",S01E07 - Enerji Dönüşümleri ve Çevre Bilimi 📗 7'den 8'e Hazırlık Kampı #78FEN7 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/qW7rBtSlOZY/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="7",S01E07 - Enerji Dönüşümleri ve Çevre Bilimi 📗 7'den 8'e Hazırlık Kampı #78FEN7 #2026
 https://invidious.nerdvpn.de/latest_version?id=qW7rBtSlOZY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/GeErFX1HdXI/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="8",S01E08 - Doğrusal Denklemler 📘 7'den 8'e Hazırlık Kampı #78MAT5 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/GeErFX1HdXI/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="8",S01E08 - Doğrusal Denklemler 📘 7'den 8'e Hazırlık Kampı #78MAT5 #2026
 https://invidious.nerdvpn.de/latest_version?id=GeErFX1HdXI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hUifcFcAcHM/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="9",S01E09 - Basit Makineler 📗 7'den 8'e Hazırlık Kampı #78FEN6 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hUifcFcAcHM/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="9",S01E09 - Basit Makineler 📗 7'den 8'e Hazırlık Kampı #78FEN6 #2026
 https://invidious.nerdvpn.de/latest_version?id=hUifcFcAcHM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/MmlRy1ta2ck/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="10",S01E10 - Cebirsel İfadeler 📘 7'den 8'e Hazırlık Kampı #78MAT4 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/MmlRy1ta2ck/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="10",S01E10 - Cebirsel İfadeler 📘 7'den 8'e Hazırlık Kampı #78MAT4 #2026
 https://invidious.nerdvpn.de/latest_version?id=MmlRy1ta2ck&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4QTMsDPX9J8/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="11",S01E11 - Deyimler ve Atasözleri 📙 7'den 8'e Hazırlık Kampı #78TURK3 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4QTMsDPX9J8/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="11",S01E11 - Deyimler ve Atasözleri 📙 7'den 8'e Hazırlık Kampı #78TURK3 #2026
 https://invidious.nerdvpn.de/latest_version?id=4QTMsDPX9J8&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NGM0bUgvcu8/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="12",S01E12 - Madde ve Endüstri (Isı ve Hal Değişimi) 📗 7'den 8'e Hazırlık Kampı #78FEN5 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NGM0bUgvcu8/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="12",S01E12 - Madde ve Endüstri (Isı ve Hal Değişimi) 📗 7'den 8'e Hazırlık Kampı #78FEN5 #2026
 https://invidious.nerdvpn.de/latest_version?id=NGM0bUgvcu8&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/P4KoCOJVfAg/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="13",S01E13 - Veri İşleme 📘 7'den 8'e Hazırlık Kampı #78MAT3 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/P4KoCOJVfAg/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="13",S01E13 - Veri İşleme 📘 7'den 8'e Hazırlık Kampı #78MAT3 #2026
 https://invidious.nerdvpn.de/latest_version?id=P4KoCOJVfAg&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/S_auH9OPpbI/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="14",S01E14 - Madde ve Endüstri (Maddenin Yapısı ve Özellikleri) 📗 7'den 8'e Hazırlık Kampı #78FEN4 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/S_auH9OPpbI/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="14",S01E14 - Madde ve Endüstri (Maddenin Yapısı ve Özellikleri) 📗 7'den 8'e Hazırlık Kampı #78FEN4 #2026
 https://invidious.nerdvpn.de/latest_version?id=S_auH9OPpbI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/3IPAsKQK2sA/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="15",S01E15 - Üslü İfadeler 📘 7'den 8'e Hazırlık Kampı #78MAT2 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/3IPAsKQK2sA/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="15",S01E15 - Üslü İfadeler 📘 7'den 8'e Hazırlık Kampı #78MAT2 #2026
 https://invidious.nerdvpn.de/latest_version?id=3IPAsKQK2sA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/LZjToNGlqDQ/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="16",S01E16 - Cümlede Anlam 📙 7'den 8'e Hazırlık Kampı #78TURK2 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/LZjToNGlqDQ/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="16",S01E16 - Cümlede Anlam 📙 7'den 8'e Hazırlık Kampı #78TURK2 #2026
 https://invidious.nerdvpn.de/latest_version?id=LZjToNGlqDQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/rrvH6QN55h0/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="17",S01E17 - Basınç 📗 7'den 8'e Hazırlık Kampı #78FEN3 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/rrvH6QN55h0/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="17",S01E17 - Basınç 📗 7'den 8'e Hazırlık Kampı #78FEN3 #2026
 https://invidious.nerdvpn.de/latest_version?id=rrvH6QN55h0&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ZP814AtBI0s/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="18",S01E18 - DNA ve Genetik Kod 📗 7'den 8'e Hazırlık Kampı #78FEN2 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ZP814AtBI0s/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="18",S01E18 - DNA ve Genetik Kod 📗 7'den 8'e Hazırlık Kampı #78FEN2 #2026
 https://invidious.nerdvpn.de/latest_version?id=ZP814AtBI0s&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/HQUdjaO4abM/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="19",S01E19 - Çarpanlar ve Katlar 📘 7'den 8'e Hazırlık Kampı #78MAT1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/HQUdjaO4abM/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="19",S01E19 - Çarpanlar ve Katlar 📘 7'den 8'e Hazırlık Kampı #78MAT1 #2026
 https://invidious.nerdvpn.de/latest_version?id=HQUdjaO4abM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/uiRbGLg-zmA/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="20",S01E20 - Mevsimler ve İklim 📗  7'den 8'e Hazırlık Kampı #78FEN1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/uiRbGLg-zmA/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="20",S01E20 - Mevsimler ve İklim 📗  7'den 8'e Hazırlık Kampı #78FEN1 #2026
 https://invidious.nerdvpn.de/latest_version?id=uiRbGLg-zmA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ABMcadnlRls/maxresdefault.jpg" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" season="1" episode="21",S01E21 - Sözcükte Anlam 📙 7'den 8'e Hazırlık Kampı #78TURK1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ABMcadnlRls/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" season="1" episode="21",S01E21 - Sözcükte Anlam 📙 7'den 8'e Hazırlık Kampı #78TURK1 #2026
 https://invidious.nerdvpn.de/latest_version?id=ABMcadnlRls&itag=22

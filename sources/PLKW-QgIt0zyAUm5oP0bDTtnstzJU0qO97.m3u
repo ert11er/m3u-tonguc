@@ -1,31 +1,33 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4ta9Fm_NgfE/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="1",S01E01 - Harf - Hece - Sözlük Sırası Genel Tekrar 📙 1. Sınıf Türkçe #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4ta9Fm_NgfE/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="1",S01E01 - Harf - Hece - Sözlük Sırası Genel Tekrar 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=4ta9Fm_NgfE&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/R_TPMv_44JM/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="2",S01E02 - Bilmece - Davetiye - Mektup 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/R_TPMv_44JM/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="2",S01E02 - Bilmece - Davetiye - Mektup 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=R_TPMv_44JM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/BeWhVTX0M5o/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="3",S01E03 - Benzetme 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/BeWhVTX0M5o/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="3",S01E03 - Benzetme 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=BeWhVTX0M5o&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/laJhxt_x1gw/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="4",S01E04 - Metnin Konusu 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/laJhxt_x1gw/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="4",S01E04 - Metnin Konusu 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=laJhxt_x1gw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/t2aXYaSdDSY/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="5",S01E05 - Cümle Bilgisi 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/t2aXYaSdDSY/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="5",S01E05 - Cümle Bilgisi 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=t2aXYaSdDSY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/pytaWI2LE9o/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="6",S01E06 - Metin Türleri - Şiir Masal ve Öykü 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/pytaWI2LE9o/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="6",S01E06 - Metin Türleri - Şiir Masal ve Öykü 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=pytaWI2LE9o&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/LL6aDHaWpLM/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="7",S01E07 - Konuşma ve Yazma Kuralları 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/LL6aDHaWpLM/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="7",S01E07 - Konuşma ve Yazma Kuralları 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=LL6aDHaWpLM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/EbJVQWcpZ28/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="8",S01E08 - Dinleme ve Okuma Kuralları 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/EbJVQWcpZ28/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="8",S01E08 - Dinleme ve Okuma Kuralları 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=EbJVQWcpZ28&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/RVyRy27xfNY/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="9",S01E09 - Olayların Oluş Sırası 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/RVyRy27xfNY/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="9",S01E09 - Olayların Oluş Sırası 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=RVyRy27xfNY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/QIhq-9qj0Mw/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="10",S01E10 - Yazım Kuralları 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/QIhq-9qj0Mw/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="10",S01E10 - Yazım Kuralları 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=QIhq-9qj0Mw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/N4VOoXnBwXA/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="11",S01E11 - Noktalama İşaretleri 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/N4VOoXnBwXA/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="11",S01E11 - Noktalama İşaretleri 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=N4VOoXnBwXA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/L8r9GqaCesY/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="12",S01E12 - Anlamlı ve Kurallı Cümle 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/L8r9GqaCesY/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="12",S01E12 - Anlamlı ve Kurallı Cümle 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=L8r9GqaCesY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/sWT7p9C2oA0/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="13",S01E13 - Sözcüklerin Yazılışını Öğrenelim 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/sWT7p9C2oA0/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="13",S01E13 - Sözcüklerin Yazılışını Öğrenelim 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=sWT7p9C2oA0&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/HsKDXnAXlg4/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="14",S01E14 - Sözcük Bilgisini Öğrenelim 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/HsKDXnAXlg4/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="14",S01E14 - Sözcük Bilgisini Öğrenelim 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=HsKDXnAXlg4&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/qkavTc5pKqQ/maxresdefault.jpg" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" season="1" episode="15",S01E15 - Harf ve Hece Bilgisini Öğrenelim 📙 1. Sınıf Türkçe #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/qkavTc5pKqQ/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" season="1" episode="15",S01E15 - Harf ve Hece Bilgisini Öğrenelim 📙 1. Sınıf Türkçe #2026
 https://invidious.nerdvpn.de/latest_version?id=qkavTc5pKqQ&itag=22

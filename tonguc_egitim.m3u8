@@ -1,109 +1,111 @@
-#EXTM3U x-tvg-url="" tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/KZ8JLcXiU_I/maxresdefault.jpg" group-title="1. Sınıf" tvg-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series",1'den 2'ye Hazırlık Yaz Kampı #2026
+#EXTM3U
+#EXT-X-SESSION-TYPE:VOD
+#EXT-X-CONTENT-TYPE:SERIES
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/KZ8JLcXiU_I/maxresdefault.jpg" group-title="1. Sınıf" series-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-name="1'den 2'ye Hazırlık Yaz Kampı #2026" tvg-type="series" type="series",1'den 2'ye Hazırlık Yaz Kampı #2026
 sources/PLKW-QgIt0zyDWDy6XB3J_-S2ZmhB6pC3T.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wKfnvbTMb3U/maxresdefault.jpg" group-title="1. Sınıf" tvg-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" tvg-type="series",1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wKfnvbTMb3U/maxresdefault.jpg" group-title="1. Sınıf" series-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" tvg-name="1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026" tvg-type="series" type="series",1.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar Kampı #2026
 sources/PLKW-QgIt0zyC_xiuliCfP8w3LL3kmZXJk.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/m744XRhuZ5k/maxresdefault.jpg" group-title="1. Sınıf" tvg-name="1. Sınıf BİLSEM Kampı #2026 🚀" tvg-type="series",1. Sınıf BİLSEM Kampı #2026 🚀
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/m744XRhuZ5k/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf BİLSEM Kampı #2026 🚀" tvg-name="1. Sınıf BİLSEM Kampı #2026 🚀" tvg-type="series" type="series",1. Sınıf BİLSEM Kampı #2026 🚀
 sources/PLKW-QgIt0zyCZH6V5wTmginoHTS5SY4RD.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/CBwsHLimkuM/maxresdefault.jpg" group-title="1. Sınıf" tvg-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series",1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/CBwsHLimkuM/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" type="series",1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026
 sources/PLKW-QgIt0zyBi9u9g1P5TZKZnO8MemY-A.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4ta9Fm_NgfE/maxresdefault.jpg" group-title="1. Sınıf" tvg-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series",1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4ta9Fm_NgfE/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-name="1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" type="series",1. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026
 sources/PLKW-QgIt0zyAUm5oP0bDTtnstzJU0qO97.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Qx0MTTSWJ5c/maxresdefault.jpg" group-title="1. Sınıf" tvg-name="1. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026" tvg-type="series",1. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Qx0MTTSWJ5c/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026" tvg-name="1. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026" tvg-type="series" type="series",1. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026
 sources/PLKW-QgIt0zyAUpsUxxEeT4tqf6NihEtXq.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/TlDliDMHJoM/maxresdefault.jpg" group-title="3. Sınıf" tvg-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series",3'ten 4'e Hazırlık Yaz Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/TlDliDMHJoM/maxresdefault.jpg" group-title="3. Sınıf" series-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-name="3'ten 4'e Hazırlık Yaz Kampı #2026" tvg-type="series" type="series",3'ten 4'e Hazırlık Yaz Kampı #2026
 sources/PLPnm9xhqlWp8.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/EZ16Y2dqOsY/maxresdefault.jpg" group-title="3. Sınıf" tvg-name="3. Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-type="series",3. Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/EZ16Y2dqOsY/maxresdefault.jpg" group-title="3. Sınıf" series-name="3. Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-name="3. Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-type="series" type="series",3. Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026
 sources/PLvciGYqQW0qKvDxeOdI-9fH8uNExyaS2g.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/tqT8Qoh5KOc/maxresdefault.jpg" group-title="3. Sınıf" tvg-name="3. Sınıf BİLSEM Kampı #2026 🚀" tvg-type="series",3. Sınıf BİLSEM Kampı #2026 🚀
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/tqT8Qoh5KOc/maxresdefault.jpg" group-title="3. Sınıf" series-name="3. Sınıf BİLSEM Kampı #2026 🚀" tvg-name="3. Sınıf BİLSEM Kampı #2026 🚀" tvg-type="series" type="series",3. Sınıf BİLSEM Kampı #2026 🚀
 sources/PLvciGYqQW0qJyqIwn3CJjHH5XiiRNrNre.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/2fyb3RBdq0k/maxresdefault.jpg" group-title="4. Sınıf" tvg-name="4'ten 5'e Hazırlık Yaz Kampı #2026" tvg-type="series",4'ten 5'e Hazırlık Yaz Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/2fyb3RBdq0k/maxresdefault.jpg" group-title="4. Sınıf" series-name="4'ten 5'e Hazırlık Yaz Kampı #2026" tvg-name="4'ten 5'e Hazırlık Yaz Kampı #2026" tvg-type="series" type="series",4'ten 5'e Hazırlık Yaz Kampı #2026
 sources/PLOHUltWl0X3S94uF5LmcNngEcVBeLIjUg.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/RhsdKOXqPfk/maxresdefault.jpg" group-title="4. Sınıf" tvg-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-type="series",4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/RhsdKOXqPfk/maxresdefault.jpg" group-title="4. Sınıf" series-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-name="4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026" tvg-type="series" type="series",4.Sınıf Sömestir Etkinlikleri ✨ 1.Dönem Full Tekrar #2026
 sources/PLOHUltWl0X3T-vp2dhs18L0V3egdzXAce.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ba3xNmDfDNA/maxresdefault.jpg" group-title="4. Sınıf" tvg-name="4. Sınıf Bursluluk Sınavına Hazırlık Kampı #2026 ✍🏻" tvg-type="series",4. Sınıf Bursluluk Sınavına Hazırlık Kampı #2026 ✍🏻
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ba3xNmDfDNA/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Bursluluk Sınavına Hazırlık Kampı #2026 ✍🏻" tvg-name="4. Sınıf Bursluluk Sınavına Hazırlık Kampı #2026 ✍🏻" tvg-type="series" type="series",4. Sınıf Bursluluk Sınavına Hazırlık Kampı #2026 ✍🏻
 sources/PLOHUltWl0X3Qvyqnccnfi5_LLYwYCpvZ8.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-FLDpQ0eBV4/maxresdefault.jpg" group-title="4. Sınıf" tvg-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series",4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-FLDpQ0eBV4/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" type="series",4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026
 sources/PLOHUltWl0X3RjMhg0uHDy759JwReGQAh4.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/asy4V06EsqQ/maxresdefault.jpg" group-title="4. Sınıf" tvg-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series",4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/asy4V06EsqQ/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-name="4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026" tvg-type="series" type="series",4. Sınıf Fen Konu Anlatımı 📗 2025 - 2026
 sources/PLOHUltWl0X3TlhScPakus28lgCYQrrcfH.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kXgqfwYdRNo/maxresdefault.jpg" group-title="4. Sınıf" tvg-name="4. Sınıf Sosyal Konu Anlatımı 📕 2025 - 2026" tvg-type="series",4. Sınıf Sosyal Konu Anlatımı 📕 2025 - 2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kXgqfwYdRNo/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Sosyal Konu Anlatımı 📕 2025 - 2026" tvg-name="4. Sınıf Sosyal Konu Anlatımı 📕 2025 - 2026" tvg-type="series" type="series",4. Sınıf Sosyal Konu Anlatımı 📕 2025 - 2026
 sources/PLOHUltWl0X3TpLAn_jfL79RUpUq6hFjIZ.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/tFW91sXsUWc/maxresdefault.jpg" group-title="4. Sınıf" tvg-name="4. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series",4. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/tFW91sXsUWc/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-name="4. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026" tvg-type="series" type="series",4. Sınıf Türkçe Konu Anlatımı 📙 2025 - 2026
 sources/PLOHUltWl0X3Tu1MlNUmEsrjbebBWIPb_z.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/lcIBTof-zHA/maxresdefault.jpg" group-title="4. Sınıf" tvg-name="4. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026" tvg-type="series",4. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/lcIBTof-zHA/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026" tvg-name="4. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026" tvg-type="series" type="series",4. Sınıf Matematik Konu Anlatımı 📘 2025 - 2026
 sources/PLOHUltWl0X3R-xKITYSm1z29Pc-5AIdVD.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/XoV-2wLg1Qs/maxresdefault.jpg" group-title="4. Sınıf" tvg-name="4. Sınıf Rehberlik ve Motivasyon 🎯 #2026" tvg-type="series",4. Sınıf Rehberlik ve Motivasyon 🎯 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/XoV-2wLg1Qs/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf Rehberlik ve Motivasyon 🎯 #2026" tvg-name="4. Sınıf Rehberlik ve Motivasyon 🎯 #2026" tvg-type="series" type="series",4. Sınıf Rehberlik ve Motivasyon 🎯 #2026
 sources/PLOHUltWl0X3TIsDIyk3IblX3dP6HsXwTz.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4j_54SBXndo/maxresdefault.jpg" group-title="7. Sınıf" tvg-name="7. Sınıf Bursluluk Kampı #2026" tvg-type="series",7. Sınıf Bursluluk Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4j_54SBXndo/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf Bursluluk Kampı #2026" tvg-name="7. Sınıf Bursluluk Kampı #2026" tvg-type="series" type="series",7. Sınıf Bursluluk Kampı #2026
 sources/PL2P63LIKTuBkvQxPGqNe3KhElfmyy7Nly.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/t-5uioR4RXM/maxresdefault.jpg" group-title="7. Sınıf" tvg-name="7. Sınıf ATAK KAMPI 🚀 #2026" tvg-type="series",7. Sınıf ATAK KAMPI 🚀 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/t-5uioR4RXM/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf ATAK KAMPI 🚀 #2026" tvg-name="7. Sınıf ATAK KAMPI 🚀 #2026" tvg-type="series" type="series",7. Sınıf ATAK KAMPI 🚀 #2026
 sources/PL2P63LIKTuBlMBvjW8AD1rs_NFxy8Q1EJ.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-95G_-DjV2E/maxresdefault.jpg" group-title="7. Sınıf" tvg-name="7. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series",7. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-95G_-DjV2E/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-name="7. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",7. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026
 sources/PL2P63LIKTuBl8KF_CJYqrVHck97SCDV4N.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/FqUjrmHI-8g/maxresdefault.jpg" group-title="7. Sınıf" tvg-name="7. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series",7. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/FqUjrmHI-8g/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-name="7. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",7. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026
 sources/PL2P63LIKTuBlZLjDEX0GXZtradm68m4UM.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wP630IvGQ2U/maxresdefault.jpg" group-title="7. Sınıf" tvg-name="7. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series",7. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wP630IvGQ2U/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-name="7. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",7. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026
 sources/PL2P63LIKTuBld8aOmteooYAVceGkGMwXP.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kgl068C2Mpg/maxresdefault.jpg" group-title="7. Sınıf" tvg-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series",7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kgl068C2Mpg/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026
 sources/PL2P63LIKTuBlJ4zZT6PPcvx92V73NzpSN.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/WssuLVcWlgw/maxresdefault.jpg" group-title="8. Sınıf" tvg-name="0'dan 8'e Hazırlık Yaz Kampı #2026 🚀" tvg-type="series",0'dan 8'e Hazırlık Yaz Kampı #2026 🚀
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/WssuLVcWlgw/maxresdefault.jpg" group-title="8. Sınıf" series-name="0'dan 8'e Hazırlık Yaz Kampı #2026 🚀" tvg-name="0'dan 8'e Hazırlık Yaz Kampı #2026 🚀" tvg-type="series" type="series",0'dan 8'e Hazırlık Yaz Kampı #2026 🚀
 sources/PLBzuP6dY9lB4.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NEOOZJ2FXBk/maxresdefault.jpg" group-title="8. Sınıf" tvg-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series",7'den 8'e Hazırlık Yaz Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NEOOZJ2FXBk/maxresdefault.jpg" group-title="8. Sınıf" series-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-name="7'den 8'e Hazırlık Yaz Kampı #2026" tvg-type="series" type="series",7'den 8'e Hazırlık Yaz Kampı #2026
 sources/PLQEfF_74yCUc.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/x55MG0wgmBY/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf Full Tekrar Kampı #2026 ✍🏻" tvg-type="series",9. Sınıf Full Tekrar Kampı #2026 ✍🏻
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/x55MG0wgmBY/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf Full Tekrar Kampı #2026 ✍🏻" tvg-name="9. Sınıf Full Tekrar Kampı #2026 ✍🏻" tvg-type="series" type="series",9. Sınıf Full Tekrar Kampı #2026 ✍🏻
 sources/PLatGE2NfKm5EMWCmpRWVtSQaJxkJ4iQi4.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/fQ_q9PvhMTo/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series",9. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/fQ_q9PvhMTo/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-name="9. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",9. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026
 sources/PLatGE2NfKm5G9t1yWyiwGLqs3rvZnbA9H.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/f-U2qNqD0eA/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series",9. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/f-U2qNqD0eA/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-name="9. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",9. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026
 sources/PLatGE2NfKm5HI-Qb49PfekouFkVI4UYaD.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/56a1qF13LFk/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series",9. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/56a1qF13LFk/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-name="9. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",9. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026
 sources/PLatGE2NfKm5Ft3nFF9XsryZyAUO9FY7f1.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/M0MYWkEPK1A/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series",9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/M0MYWkEPK1A/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-name="9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",9. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026
 sources/PLatGE2NfKm5FEkHxRRCRu9X6gwiVeeUbG.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/FKSc4u9gyrM/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf Tarih Güncel Konu Anlatımı #2026" tvg-type="series",9. Sınıf Tarih Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/FKSc4u9gyrM/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf Tarih Güncel Konu Anlatımı #2026" tvg-name="9. Sınıf Tarih Güncel Konu Anlatımı #2026" tvg-type="series" type="series",9. Sınıf Tarih Güncel Konu Anlatımı #2026
 sources/PLatGE2NfKm5H83Ajuo8du1ckEf0Kp8aF0.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0wGgvKMhLGg/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf Fizik Güncel Konu Anlatımı #2026" tvg-type="series",9. Sınıf Fizik Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0wGgvKMhLGg/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf Fizik Güncel Konu Anlatımı #2026" tvg-name="9. Sınıf Fizik Güncel Konu Anlatımı #2026" tvg-type="series" type="series",9. Sınıf Fizik Güncel Konu Anlatımı #2026
 sources/PLatGE2NfKm5EN1dzQx-qNRRLhKpOCX6hW.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/3iBvwoKVMJM/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf Coğrafya Güncel Konu Anlatımı #2026" tvg-type="series",9. Sınıf Coğrafya Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/3iBvwoKVMJM/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf Coğrafya Güncel Konu Anlatımı #2026" tvg-name="9. Sınıf Coğrafya Güncel Konu Anlatımı #2026" tvg-type="series" type="series",9. Sınıf Coğrafya Güncel Konu Anlatımı #2026
 sources/PLatGE2NfKm5GLX6MAQkKBzz0aJQJlVcBy.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/5tTC-xwhV-4/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf Matematik Güncel Konu Anlatımı #2026" tvg-type="series",9. Sınıf Matematik Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/5tTC-xwhV-4/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf Matematik Güncel Konu Anlatımı #2026" tvg-name="9. Sınıf Matematik Güncel Konu Anlatımı #2026" tvg-type="series" type="series",9. Sınıf Matematik Güncel Konu Anlatımı #2026
 sources/PLatGE2NfKm5FXpDKuT1VyFrb92N1V28h1.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/DMPGEdobmJ0/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series",9. Sınıf Kimya Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/DMPGEdobmJ0/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-name="9. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" type="series",9. Sınıf Kimya Güncel Konu Anlatımı #2026
 sources/PLatGE2NfKm5GUkyPGG0UUVmqwQ1NHL50K.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/W5bkYzoAM9c/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf Biyoloji Güncel Konu Anlatımı #2026" tvg-type="series",9. Sınıf Biyoloji Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/W5bkYzoAM9c/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf Biyoloji Güncel Konu Anlatımı #2026" tvg-name="9. Sınıf Biyoloji Güncel Konu Anlatımı #2026" tvg-type="series" type="series",9. Sınıf Biyoloji Güncel Konu Anlatımı #2026
 sources/PLatGE2NfKm5FyhOo5xX10tvtE29e6Vup4.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/vTwVzoy_WKs/maxresdefault.jpg" group-title="9. Sınıf" tvg-name="9. Sınıf Edebiyat Güncel Konu Anlatımı #2026" tvg-type="series",9. Sınıf Edebiyat Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/vTwVzoy_WKs/maxresdefault.jpg" group-title="9. Sınıf" series-name="9. Sınıf Edebiyat Güncel Konu Anlatımı #2026" tvg-name="9. Sınıf Edebiyat Güncel Konu Anlatımı #2026" tvg-type="series" type="series",9. Sınıf Edebiyat Güncel Konu Anlatımı #2026
 sources/PLatGE2NfKm5E2Z7Uq9WPEnwK-HRd1PndZ.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/YzrkFwRlhTo/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-type="series",10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/YzrkFwRlhTo/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-name="10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚" tvg-type="series" type="series",10. Sınıf 1. Dönem Full Tekrar Kampı #2026 📚
 sources/PLnEa-FztoZ6YSGBQEFxunfgeV3XKazMjN.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/MTZcExlKSf0/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series",10. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/MTZcExlKSf0/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-name="10. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",10. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026
 sources/PLnEa-FztoZ6bxnlFgxIXSCk2p0Cp6Rusl.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/77wMk7nB1Sc/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series",10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/77wMk7nB1Sc/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026
 sources/PLnEa-FztoZ6boo0Q5j7g8G20SMEdNkOvx.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/GzhAj7XCygU/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series",10. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/GzhAj7XCygU/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-name="10. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",10. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026
 sources/PLnEa-FztoZ6YF8UQBHd-bZZfO5u8bCRMd.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ggUC4nPfjxY/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series",10. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ggUC4nPfjxY/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-name="10. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",10. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026
 sources/PLnEa-FztoZ6Y14J_JCt_87PV9uVT28obE.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/fgOxbhEMnQQ/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf Edebiyat Güncel Konu Anlatımı #2026" tvg-type="series",10. Sınıf Edebiyat Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/fgOxbhEMnQQ/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Edebiyat Güncel Konu Anlatımı #2026" tvg-name="10. Sınıf Edebiyat Güncel Konu Anlatımı #2026" tvg-type="series" type="series",10. Sınıf Edebiyat Güncel Konu Anlatımı #2026
 sources/PLnEa-FztoZ6ZxKPlQyFH01-Iwj1LkQKGJ.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/m58DMFRjjv0/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf Tarih Güncel Konu Anlatımı #2026" tvg-type="series",10. Sınıf Tarih Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/m58DMFRjjv0/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Tarih Güncel Konu Anlatımı #2026" tvg-name="10. Sınıf Tarih Güncel Konu Anlatımı #2026" tvg-type="series" type="series",10. Sınıf Tarih Güncel Konu Anlatımı #2026
 sources/PLnEa-FztoZ6YzpNfLVfbxaUlY5MdqSJBX.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/EHb523IzgDM/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf Matematik Güncel Konu Anlatımı #2026" tvg-type="series",10. Sınıf Matematik Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/EHb523IzgDM/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Matematik Güncel Konu Anlatımı #2026" tvg-name="10. Sınıf Matematik Güncel Konu Anlatımı #2026" tvg-type="series" type="series",10. Sınıf Matematik Güncel Konu Anlatımı #2026
 sources/PLnEa-FztoZ6Ypp6YGJpU4X7n4O3uhA-YL.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/JRD0C439BdY/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf Coğrafya Güncel Konu Anlatımı #2026" tvg-type="series",10. Sınıf Coğrafya Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/JRD0C439BdY/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Coğrafya Güncel Konu Anlatımı #2026" tvg-name="10. Sınıf Coğrafya Güncel Konu Anlatımı #2026" tvg-type="series" type="series",10. Sınıf Coğrafya Güncel Konu Anlatımı #2026
 sources/PLnEa-FztoZ6Z21WwzHyX8cjlHY6LFlEqO.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/1LzeTSqt6To/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf Fizik Güncel Konu Anlatımı #2026" tvg-type="series",10. Sınıf Fizik Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/1LzeTSqt6To/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Fizik Güncel Konu Anlatımı #2026" tvg-name="10. Sınıf Fizik Güncel Konu Anlatımı #2026" tvg-type="series" type="series",10. Sınıf Fizik Güncel Konu Anlatımı #2026
 sources/PLnEa-FztoZ6aaPD54f99tnBXimc263AvW.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/uJbdqqFARHY/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf Biyoloji Güncel Konu Anlatımı #2026" tvg-type="series",10. Sınıf Biyoloji Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/uJbdqqFARHY/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Biyoloji Güncel Konu Anlatımı #2026" tvg-name="10. Sınıf Biyoloji Güncel Konu Anlatımı #2026" tvg-type="series" type="series",10. Sınıf Biyoloji Güncel Konu Anlatımı #2026
 sources/PLnEa-FztoZ6aE8WqYlZjg-66m4NLCwY4M.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AZqZEDUrfx0/maxresdefault.jpg" group-title="10. Sınıf" tvg-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series",10. Sınıf Kimya Güncel Konu Anlatımı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AZqZEDUrfx0/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" type="series",10. Sınıf Kimya Güncel Konu Anlatımı #2026
 sources/PLnEa-FztoZ6bcZiI3XOV0fGIxk2meqWvA.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dTIel9jDjn4/maxresdefault.jpg" group-title="11. Sınıf" tvg-name="11. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series",11. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dTIel9jDjn4/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-name="11. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",11. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026
 sources/PLAadEGqHFlVQkl5gXiIEnzgJqml1V03UJ.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/7OZb1Flsnzg/maxresdefault.jpg" group-title="11. Sınıf" tvg-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series",11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/7OZb1Flsnzg/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-name="11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",11. Sınıf 2. Dönem 2. Yazılıya Hazırlık Kampı #2026
 sources/PLAadEGqHFlVSTBUc1ROgRlheAzZGM_6iS.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kMW4jDMYwQ4/maxresdefault.jpg" group-title="11. Sınıf" tvg-name="11. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series",11. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kMW4jDMYwQ4/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-name="11. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",11. Sınıf 1. Dönem 2. Yazılıya Hazırlık Kampı #2026
 sources/PLAadEGqHFlVR0_vru4psQGV9BUuF_bzqO.m3u
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/oN_twUqlm48/maxresdefault.jpg" group-title="11. Sınıf" tvg-name="11. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series",11. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/oN_twUqlm48/maxresdefault.jpg" group-title="11. Sınıf" series-name="11. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-name="11. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" type="series",11. Sınıf 1. Dönem 1. Yazılıya Hazırlık Kampı #2026
 sources/PLAadEGqHFlVR2CLJmT6awOceb1diNVvjO.m3u

@@ -1,21 +1,23 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AZqZEDUrfx0/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="1",S01E01 - Kimyasal Tepkimelerin Atmosfer ve Ekosisteme Etkisi | 10. Sınıf Kimya #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AZqZEDUrfx0/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="1",S01E01 - Kimyasal Tepkimelerin Atmosfer ve Ekosisteme Etkisi | 10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=AZqZEDUrfx0&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/6i5W5lvwjdU/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="2",S01E02 - Deneyler ve Ekosistem | 10. Sınıf Kimya #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/6i5W5lvwjdU/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="2",S01E02 - Deneyler ve Ekosistem | 10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=6i5W5lvwjdU&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/fVIKdcBApTA/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="3",S01E03 - Koligatif Özellikler | 10. Sınıf Kimya #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/fVIKdcBApTA/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="3",S01E03 - Koligatif Özellikler | 10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=fVIKdcBApTA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wcPxxyy9Dj4/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="4",S01E04 - Çözünürlük | 10. Sınıf Kimya #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wcPxxyy9Dj4/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="4",S01E04 - Çözünürlük | 10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=wcPxxyy9Dj4&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/nCgz8SpBecg/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="5",S01E05 - Molarite | 10. Sınıf Kimya #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/nCgz8SpBecg/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="5",S01E05 - Molarite | 10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=nCgz8SpBecg&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/8-eEbRJUkt0/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="6",S01E06 - Çözünme Olayı  |10. Sınıf Kimya #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/8-eEbRJUkt0/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="6",S01E06 - Çözünme Olayı  |10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=8-eEbRJUkt0&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/GUDQijv0t3I/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="7",S01E07 - Gazların Yayılması  | 10. Sınıf Kimya #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/GUDQijv0t3I/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="7",S01E07 - Gazların Yayılması  | 10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=GUDQijv0t3I&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/jEME_UotFkY/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="8",S01E08 - Gazlar | 10. Sınıf Kimya #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/jEME_UotFkY/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="8",S01E08 - Gazlar | 10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=jEME_UotFkY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/82V7Jd-OKlI/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="9",S01E09 - Mol Kavramı | 10. Sınıf Kimya #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/82V7Jd-OKlI/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="9",S01E09 - Mol Kavramı | 10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=82V7Jd-OKlI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/uLx3P6mzJkI/maxresdefault.jpg" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" season="1" episode="10",S01E10 - Kimyasal Tepkimeler | 10. Sınıf Kimya #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/uLx3P6mzJkI/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf Kimya Güncel Konu Anlatımı #2026" tvg-type="series" season="1" episode="10",S01E10 - Kimyasal Tepkimeler | 10. Sınıf Kimya #2026
 https://invidious.nerdvpn.de/latest_version?id=uLx3P6mzJkI&itag=22

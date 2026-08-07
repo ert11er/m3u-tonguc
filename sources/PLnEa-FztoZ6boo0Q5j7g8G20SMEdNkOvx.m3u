@@ -1,19 +1,21 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/77wMk7nB1Sc/maxresdefault.jpg" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="1",S01E01 - YARINKİ ÜLKE GENELİ EDEBİYAT SINAVINA HAZIRLIK ✍🏻 10. SINIF #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/77wMk7nB1Sc/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="1",S01E01 - YARINKİ ÜLKE GENELİ EDEBİYAT SINAVINA HAZIRLIK ✍🏻 10. SINIF #2026
 https://invidious.nerdvpn.de/latest_version?id=77wMk7nB1Sc&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/8OT116qsyjc/maxresdefault.jpg" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="2",S01E02 - YARINKİ ÜLKE GENELİ MATEMATİK SINAVINA HAZIRLIK ✍🏻 10. SINIF #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/8OT116qsyjc/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="2",S01E02 - YARINKİ ÜLKE GENELİ MATEMATİK SINAVINA HAZIRLIK ✍🏻 10. SINIF #2026
 https://invidious.nerdvpn.de/latest_version?id=8OT116qsyjc&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0se9QhnD9nw/maxresdefault.jpg" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="3",S01E03 - 10. Sınıf Tarih 2. Dönem 1. Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0se9QhnD9nw/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="3",S01E03 - 10. Sınıf Tarih 2. Dönem 1. Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=0se9QhnD9nw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/qsZtSpF8Xd0/maxresdefault.jpg" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="4",S01E04 - 10.Sınıf Fizik 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/qsZtSpF8Xd0/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="4",S01E04 - 10.Sınıf Fizik 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=qsZtSpF8Xd0&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/xvIfnqXJK2M/maxresdefault.jpg" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="5",S01E05 - 10.Sınıf Biyoloji 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/xvIfnqXJK2M/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="5",S01E05 - 10.Sınıf Biyoloji 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=xvIfnqXJK2M&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mWdeH5tKRG4/maxresdefault.jpg" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="6",S01E06 - 10.Sınıf Coğrafya 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mWdeH5tKRG4/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="6",S01E06 - 10.Sınıf Coğrafya 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=mWdeH5tKRG4&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/vngD04B_zPo/maxresdefault.jpg" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="7",S01E07 - 10.Sınıf Matematik 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/vngD04B_zPo/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="7",S01E07 - 10.Sınıf Matematik 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=vngD04B_zPo&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kSTpDtBb4SA/maxresdefault.jpg" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="8",S01E08 - 10.Sınıf Edebiyat 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kSTpDtBb4SA/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="8",S01E08 - 10.Sınıf Edebiyat 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=kSTpDtBb4SA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dP9ybrcb49Q/maxresdefault.jpg" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="9",S01E09 - 10.Sınıf Kimya 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dP9ybrcb49Q/maxresdefault.jpg" group-title="10. Sınıf" series-name="10. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="9",S01E09 - 10.Sınıf Kimya 2.Dönem 1.Yazılıya Hazırlık 📑 #2026
 https://invidious.nerdvpn.de/latest_version?id=dP9ybrcb49Q&itag=22

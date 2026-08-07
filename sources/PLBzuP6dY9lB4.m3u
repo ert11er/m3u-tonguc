@@ -1,7 +1,9 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/WssuLVcWlgw/maxresdefault.jpg" series-name="0'dan 8'e Hazırlık Yaz Kampı #2026 🚀" season="1" episode="1",S01E01 - EBOB - EKOK Aralarında Asal Sayılar 📘 0'dan 8'e Hazırlık Kampı #08MAT2 #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/WssuLVcWlgw/maxresdefault.jpg" group-title="8. Sınıf" series-name="0'dan 8'e Hazırlık Yaz Kampı #2026 🚀" tvg-type="series" season="1" episode="1",S01E01 - EBOB - EKOK Aralarında Asal Sayılar 📘 0'dan 8'e Hazırlık Kampı #08MAT2 #2026
 https://invidious.nerdvpn.de/latest_version?id=WssuLVcWlgw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/HnrqVwsO1to/maxresdefault.jpg" series-name="0'dan 8'e Hazırlık Yaz Kampı #2026 🚀" season="1" episode="2",S01E02 - Mevsimlerin Oluşumu 📗 0'dan 8'e Hazırlık Kampı #08FEN1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/HnrqVwsO1to/maxresdefault.jpg" group-title="8. Sınıf" series-name="0'dan 8'e Hazırlık Yaz Kampı #2026 🚀" tvg-type="series" season="1" episode="2",S01E02 - Mevsimlerin Oluşumu 📗 0'dan 8'e Hazırlık Kampı #08FEN1 #2026
 https://invidious.nerdvpn.de/latest_version?id=HnrqVwsO1to&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/I7jihG_7FGM/maxresdefault.jpg" series-name="0'dan 8'e Hazırlık Yaz Kampı #2026 🚀" season="1" episode="3",S01E03 - Çarpanlar ve Katlar 📘 0'dan 8'e Hazırlık Kampı #08MAT1 #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/I7jihG_7FGM/maxresdefault.jpg" group-title="8. Sınıf" series-name="0'dan 8'e Hazırlık Yaz Kampı #2026 🚀" tvg-type="series" season="1" episode="3",S01E03 - Çarpanlar ve Katlar 📘 0'dan 8'e Hazırlık Kampı #08MAT1 #2026
 https://invidious.nerdvpn.de/latest_version?id=I7jihG_7FGM&itag=22

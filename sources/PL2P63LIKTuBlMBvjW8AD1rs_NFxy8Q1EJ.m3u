@@ -1,7 +1,9 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/t-5uioR4RXM/maxresdefault.jpg" series-name="7. Sınıf ATAK KAMPI 🚀 #2026" season="1" episode="1",S01E01 - Paragraf Sorularında Zirveye Tırman! - Part 2 ✍🏻7. Sınıf Atak Kampı #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/t-5uioR4RXM/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf ATAK KAMPI 🚀 #2026" tvg-type="series" season="1" episode="1",S01E01 - Paragraf Sorularında Zirveye Tırman! - Part 2 ✍🏻7. Sınıf Atak Kampı #2026
 https://invidious.nerdvpn.de/latest_version?id=t-5uioR4RXM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/UlVs4g9aHdc/maxresdefault.jpg" series-name="7. Sınıf ATAK KAMPI 🚀 #2026" season="1" episode="2",S01E02 - Matematik İsabetli Soru Çözümü! ✍🏻 7. Sınıf ATAK KAMPI #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/UlVs4g9aHdc/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf ATAK KAMPI 🚀 #2026" tvg-type="series" season="1" episode="2",S01E02 - Matematik İsabetli Soru Çözümü! ✍🏻 7. Sınıf ATAK KAMPI #2026
 https://invidious.nerdvpn.de/latest_version?id=UlVs4g9aHdc&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Ke8AGQUKxFg/maxresdefault.jpg" series-name="7. Sınıf ATAK KAMPI 🚀 #2026" season="1" episode="3",S01E03 - Paragraf Sorularında Zirveye Tırman! ✍🏻7. Sınıf Atak Kampı #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Ke8AGQUKxFg/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf ATAK KAMPI 🚀 #2026" tvg-type="series" season="1" episode="3",S01E03 - Paragraf Sorularında Zirveye Tırman! ✍🏻7. Sınıf Atak Kampı #2026
 https://invidious.nerdvpn.de/latest_version?id=Ke8AGQUKxFg&itag=22

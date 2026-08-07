@@ -1,55 +1,57 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/CBwsHLimkuM/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="1",S01E01 - Sanat Bize İyi Gelir 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/CBwsHLimkuM/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="1",S01E01 - Sanat Bize İyi Gelir 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=CBwsHLimkuM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/rsXPa_ktgUU/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="2",S01E02 - Teknolojiyi Keşfedelim 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/rsXPa_ktgUU/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="2",S01E02 - Teknolojiyi Keşfedelim 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=rsXPa_ktgUU&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/V1IbDJECBhI/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="3",S01E03 - Bilimin Peşindeyiz 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/V1IbDJECBhI/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="3",S01E03 - Bilimin Peşindeyiz 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=V1IbDJECBhI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/skqwQPB3BgU/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="4",S01E04 - Geri Dönüşüm 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/skqwQPB3BgU/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="4",S01E04 - Geri Dönüşüm 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=skqwQPB3BgU&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NtgaRK2E5oY/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="5",S01E05 - Dikkat Afet! 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/NtgaRK2E5oY/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="5",S01E05 - Dikkat Afet! 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=NtgaRK2E5oY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/iUFmxfFhOgY/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="6",S01E06 - Gökyüzünde Neler Var? 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/iUFmxfFhOgY/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="6",S01E06 - Gökyüzünde Neler Var? 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=iUFmxfFhOgY&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0FFxkiN9wQI/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="7",S01E07 - Doğayla Baş Başa 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0FFxkiN9wQI/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="7",S01E07 - Doğayla Baş Başa 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=0FFxkiN9wQI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wK5hnG6JWoE/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="8",S01E08 - El Öpenleriniz Çok Olsun 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/wK5hnG6JWoE/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="8",S01E08 - El Öpenleriniz Çok Olsun 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=wK5hnG6JWoE&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/PWzv9F9_nn4/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="9",S01E09 - Al Bayrağı Koş Bayrama 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/PWzv9F9_nn4/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="9",S01E09 - Al Bayrağı Koş Bayrama 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=PWzv9F9_nn4&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/3u5bdE3Dyx4/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="10",S01E10 - Atatürk'ü Tanıyalım 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/3u5bdE3Dyx4/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="10",S01E10 - Atatürk'ü Tanıyalım 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=3u5bdE3Dyx4&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/V5DQFTpwJho/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="11",S01E11 - Bayrağımız ve İstiklal Marşımızın Önemi 📕 1. Sınıf Hayat Bilgisi
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/V5DQFTpwJho/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="11",S01E11 - Bayrağımız ve İstiklal Marşımızın Önemi 📕 1. Sınıf Hayat Bilgisi
 https://invidious.nerdvpn.de/latest_version?id=V5DQFTpwJho&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/B10cqTNuPSM/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="12",S01E12 - Yaşadığım Yer ve Güzel Ülkem - 2 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/B10cqTNuPSM/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="12",S01E12 - Yaşadığım Yer ve Güzel Ülkem - 2 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=B10cqTNuPSM&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/2R9IIPPlmzI/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="13",S01E13 - Yaşadığım Yer ve Güzel Ülkem 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/2R9IIPPlmzI/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="13",S01E13 - Yaşadığım Yer ve Güzel Ülkem 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=2R9IIPPlmzI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/QRA2cIS6lWo/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="14",S01E14 - Biz İyi Bir Takımız 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/QRA2cIS6lWo/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="14",S01E14 - Biz İyi Bir Takımız 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=QRA2cIS6lWo&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/eZ78MAaOiEI/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="15",S01E15 - Nezaket ve Görgü Kuralları 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/eZ78MAaOiEI/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="15",S01E15 - Nezaket ve Görgü Kuralları 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=eZ78MAaOiEI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bDySrFcGRIQ/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="16",S01E16 - Bizim Ev - Aile Hayatının Önemi 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bDySrFcGRIQ/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="16",S01E16 - Bizim Ev - Aile Hayatının Önemi 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=bDySrFcGRIQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mOm_rOLidgQ/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="17",S01E17 - Bizim Ev - Aile Üyeleri 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mOm_rOLidgQ/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="17",S01E17 - Bizim Ev - Aile Üyeleri 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=mOm_rOLidgQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hALiq65eDsg/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="18",S01E18 - Eyvah Acil Durum! 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hALiq65eDsg/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="18",S01E18 - Eyvah Acil Durum! 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=hALiq65eDsg&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/3dFP2k_-Icw/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="19",S01E19 - Trafik Kurallarını Öğrenelim 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/3dFP2k_-Icw/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="19",S01E19 - Trafik Kurallarını Öğrenelim 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=3dFP2k_-Icw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/T9cnayJtHQ8/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="20",S01E20 - Kişisel Alan Sınırlarım 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/T9cnayJtHQ8/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="20",S01E20 - Kişisel Alan Sınırlarım 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=T9cnayJtHQ8&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/IK_-KIETJ9o/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="21",S01E21 - Sağlıklı Hayat 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/IK_-KIETJ9o/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="21",S01E21 - Sağlıklı Hayat 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=IK_-KIETJ9o&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0A5LxHAClM8/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="22",S01E22 - Nasıl Görünüyor ve Nasıl Hissediyorum? 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0A5LxHAClM8/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="22",S01E22 - Nasıl Görünüyor ve Nasıl Hissediyorum? 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=0A5LxHAClM8&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ImcdC9Pa8e0/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="23",S01E23 - Okul Kuralları 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/ImcdC9Pa8e0/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="23",S01E23 - Okul Kuralları 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=ImcdC9Pa8e0&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Low1pZTTeDQ/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="24",S01E24 - Sınıf Kuralları 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Low1pZTTeDQ/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="24",S01E24 - Sınıf Kuralları 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=Low1pZTTeDQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hcs44tXU0uw/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="25",S01E25 - Okulumuzda Çalışanlar ve Sınıfımızda Neler Var? 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/hcs44tXU0uw/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="25",S01E25 - Okulumuzda Çalışanlar ve Sınıfımızda Neler Var? 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=hcs44tXU0uw&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mUY6eYzlB8U/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="26",S01E26 - Okulumuzu Keşfedelim 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mUY6eYzlB8U/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="26",S01E26 - Okulumuzu Keşfedelim 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=mUY6eYzlB8U&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/yQZgz9tfrzs/maxresdefault.jpg" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" season="1" episode="27",S01E27 - Öğretmenim ve Arkadaşlarımla Tanışıyorum 📕 1. Sınıf Hayat Bilgisi #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/yQZgz9tfrzs/maxresdefault.jpg" group-title="1. Sınıf" series-name="1. Sınıf Hayat Bilgisi Konu Anlatımı 🎈 2025 - 2026" tvg-type="series" season="1" episode="27",S01E27 - Öğretmenim ve Arkadaşlarımla Tanışıyorum 📕 1. Sınıf Hayat Bilgisi #2026
 https://invidious.nerdvpn.de/latest_version?id=yQZgz9tfrzs&itag=22

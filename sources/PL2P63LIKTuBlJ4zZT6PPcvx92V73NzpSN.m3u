@@ -1,25 +1,27 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kgl068C2Mpg/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="1",S01E01 - YARINKİ TÜRKÇE YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kgl068C2Mpg/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="1",S01E01 - YARINKİ TÜRKÇE YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
 https://invidious.nerdvpn.de/latest_version?id=kgl068C2Mpg&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/zIpCqO1m7cc/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="2",S01E02 - YARINKİ İNGİLİZCE YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/zIpCqO1m7cc/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="2",S01E02 - YARINKİ İNGİLİZCE YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
 https://invidious.nerdvpn.de/latest_version?id=zIpCqO1m7cc&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4BGtKMfzB48/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="3",S01E03 - YARINKİ DİN YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4BGtKMfzB48/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="3",S01E03 - YARINKİ DİN YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
 https://invidious.nerdvpn.de/latest_version?id=4BGtKMfzB48&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/DPS1shjTWEI/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="4",S01E04 - YARINKİ SOSYAL YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/DPS1shjTWEI/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="4",S01E04 - YARINKİ SOSYAL YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
 https://invidious.nerdvpn.de/latest_version?id=DPS1shjTWEI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/WG65KXqM6LE/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="5",S01E05 - YARINKİ MATEMATİK YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/WG65KXqM6LE/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="5",S01E05 - YARINKİ MATEMATİK YAZILISINDA ÇIKAR❗ ✍🏻 7. SINIF #2026
 https://invidious.nerdvpn.de/latest_version?id=WG65KXqM6LE&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kzH-8mH5Wrs/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="6",S01E06 - YARINKİ FEN YAZILISINDA ÇIKAR❗ ✍🏻7. SINIF #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/kzH-8mH5Wrs/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="6",S01E06 - YARINKİ FEN YAZILISINDA ÇIKAR❗ ✍🏻7. SINIF #2026
 https://invidious.nerdvpn.de/latest_version?id=kzH-8mH5Wrs&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/jv-sRN4WA6Y/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="7",S01E07 - 7.Sınıf İngilizce 2. Dönem 1. Yazılıya Hazırlık 📑 #7ING2D1Y #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/jv-sRN4WA6Y/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="7",S01E07 - 7.Sınıf İngilizce 2. Dönem 1. Yazılıya Hazırlık 📑 #7ING2D1Y #2026
 https://invidious.nerdvpn.de/latest_version?id=jv-sRN4WA6Y&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Rcn7IwYMzvQ/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="8",S01E08 - 7.Sınıf Din 2. Dönem 1. Yazılıya Hazırlık 📑 #7DIN2D1Y #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Rcn7IwYMzvQ/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="8",S01E08 - 7.Sınıf Din 2. Dönem 1. Yazılıya Hazırlık 📑 #7DIN2D1Y #2026
 https://invidious.nerdvpn.de/latest_version?id=Rcn7IwYMzvQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/YzaYGacFu08/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="9",S01E09 - 7.Sınıf Fen 2. Dönem 1. Yazılıya Hazırlık 📑 #7FEN2D1Y #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/YzaYGacFu08/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="9",S01E09 - 7.Sınıf Fen 2. Dönem 1. Yazılıya Hazırlık 📑 #7FEN2D1Y #2026
 https://invidious.nerdvpn.de/latest_version?id=YzaYGacFu08&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/2x-nzjztBLA/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="10",S01E10 - 7.Sınıf Sosyal 2. Dönem 1. Yazılıya Hazırlık 📑 #7SOS2D1Y #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/2x-nzjztBLA/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="10",S01E10 - 7.Sınıf Sosyal 2. Dönem 1. Yazılıya Hazırlık 📑 #7SOS2D1Y #2026
 https://invidious.nerdvpn.de/latest_version?id=2x-nzjztBLA&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AiiMIIYc4_g/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="11",S01E11 - 7.Sınıf Matematik 2. Dönem 1. Yazılıya Hazırlık 📑 #7MAT2D1Y #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AiiMIIYc4_g/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="11",S01E11 - 7.Sınıf Matematik 2. Dönem 1. Yazılıya Hazırlık 📑 #7MAT2D1Y #2026
 https://invidious.nerdvpn.de/latest_version?id=AiiMIIYc4_g&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-YJLGozMw1o/maxresdefault.jpg" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" season="1" episode="12",S01E12 - 7.Sınıf Türkçe 2.Dönem 1.Yazılıya Hazırlık 📑 #7TURK2D1Y #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-YJLGozMw1o/maxresdefault.jpg" group-title="7. Sınıf" series-name="7. Sınıf 2. Dönem 1. Yazılıya Hazırlık Kampı #2026" tvg-type="series" season="1" episode="12",S01E12 - 7.Sınıf Türkçe 2.Dönem 1.Yazılıya Hazırlık 📑 #7TURK2D1Y #2026
 https://invidious.nerdvpn.de/latest_version?id=-YJLGozMw1o&itag=22

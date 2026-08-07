@@ -1,21 +1,23 @@
-#EXTM3U tvg-type="series"
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-FLDpQ0eBV4/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="1",S01E01 - Food and Drinks 🟪 4. Sınıf İngilizce #2026
+#EXTM3U
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXT-X-TARGETDURATION:3600
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/-FLDpQ0eBV4/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="1",S01E01 - Food and Drinks 🟪 4. Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=-FLDpQ0eBV4&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AZHuG__qOaI/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="2",S01E02 - My Friends 🟪 4. Sınıf İngilizce #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/AZHuG__qOaI/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="2",S01E02 - My Friends 🟪 4. Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=AZHuG__qOaI&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mTjJzQDh5FQ/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="3",S01E03 - My Clothes 🟪 4. Sınıf İngilizce #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/mTjJzQDh5FQ/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="3",S01E03 - My Clothes 🟪 4. Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=mTjJzQDh5FQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/5L0qmhKSifQ/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="4",S01E04 - Jobs 🟪 4. Sınıf İngilizce #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/5L0qmhKSifQ/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="4",S01E04 - Jobs 🟪 4. Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=5L0qmhKSifQ&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/rnN7AoI6pVk/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="5",S01E05 - Fun with Science 🟪 4. Sınıf İngilizce #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/rnN7AoI6pVk/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="5",S01E05 - Fun with Science 🟪 4. Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=rnN7AoI6pVk&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/pUM1VPEpLZU/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="6",S01E06 - My Day 🟪 4. Sınıf İngilizce #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/pUM1VPEpLZU/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="6",S01E06 - My Day 🟪 4. Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=pUM1VPEpLZU&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bmGeCw9fDV0/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="7",S01E07 - Free Time 🟪 4. Sınıf İngilizce #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/bmGeCw9fDV0/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="7",S01E07 - Free Time 🟪 4. Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=bmGeCw9fDV0&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/QUW6u-UgHWc/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="8",S01E08 - Cartoon Characters 🟪 4. Sınıf İngilizce #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/QUW6u-UgHWc/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="8",S01E08 - Cartoon Characters 🟪 4. Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=QUW6u-UgHWc&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Am54tkpYp68/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="9",S01E09 - Nationality 🟪 4.Sınıf İngilizce #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Am54tkpYp68/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="9",S01E09 - Nationality 🟪 4.Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=Am54tkpYp68&itag=22
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Mwe9Nntsa7o/maxresdefault.jpg" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" season="1" episode="10",S01E10 - Classroom Rules 🟪 4. Sınıf İngilizce #2026
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/Mwe9Nntsa7o/maxresdefault.jpg" group-title="4. Sınıf" series-name="4. Sınıf İngilizce Konu Anlatımı 📚 2025 - 2026" tvg-type="series" season="1" episode="10",S01E10 - Classroom Rules 🟪 4. Sınıf İngilizce #2026
 https://invidious.nerdvpn.de/latest_version?id=Mwe9Nntsa7o&itag=22
