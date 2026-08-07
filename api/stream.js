@@ -130,9 +130,10 @@ export default async function handler(req, res) {
     }
 
     // =============================================================
-    // 3. ÖNCELİK: YouTube Embed (WebView Fallback)
+    // 3. ÖNCELİK: Fix for Error 153 (YouTube No-Cookie Embed)
     // =============================================================
-    return res.redirect(302, `https://www.youtube.com/embed/${ytVideoId}?autoplay=1`);
+    const embedUrl = `https://www.youtube-nocookie.com/embed/${ytVideoId}?autoplay=1&modestbranding=1&rel=0&enablejsapi=1`;
+    return res.redirect(302, embedUrl);
 
   } catch (error) {
     return res.status(500).send("Server Error: " + error.message);
