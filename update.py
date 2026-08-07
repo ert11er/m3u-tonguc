@@ -1,7 +1,6 @@
 from datetime import datetime
 import yt_dlp
 
-# Automatically uses current year (2026, 2027, etc.)
 TARGET_YEAR = str(datetime.now().year)
 
 channels = [
@@ -18,7 +17,8 @@ channels = [
     {"name": "11. sınıf", "id": "UCiuFKj-SmFf8M4m1ybbftCw"}
 ]
 
-m3u_content = "#EXTM3U\n"
+m3u_content = "#EXTM3U x-tvg-url=\"\"\n"
+
 ydl_opts = {
     'extract_flat': 'in_playlist',
     'skip_download': True,
@@ -53,7 +53,6 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 playlist_id = playlist_entry.get('id')
                 playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'")
                 
-                # Year filter check
                 if TARGET_YEAR not in playlist_title:
                     continue
                 
@@ -80,17 +79,16 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     if not video_id:
                         continue
                         
-                    # TV Show parameters for TiviMate
                     logo = f'tvg-logo="https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg"'
-                    group = f'group-title="{channel["name"]}"'
-                    series = f'series-name="{playlist_title}"'
-                    season_str = 'season="1"'
-                    episode_str = f'episode="{episode_num}"'
-                    tv_type = 'tvg-type="tvshow"'
+                    group_name = f"{channel['name']} - {playlist_title}"
                     
-                    # S01E0X prefix ensures TiviMate groups it into Series format
-                    m3u_content += f'#EXTINF:-1 {tv_type} {logo} {group} {series} {season_str} {episode_str},S01E{episode_num:02d} - {video_title}\n'
-                    m3u_content += f'https://www.youtube.com/watch?v={video_id}\n'
+                    # Direct HLS Stream format for player stream parsing
+                    # Uses invidious stream resolution redirect for M3U compatibility
+                    stream_url = f"https://invidious.nerdvpn.de/latest_version?id={video_id}&itag=22"
+                    
+                    m3u_content += f'#EXTINF:-1 {logo} group-title="{group_name}" tvg-type="vod",S01E{episode_num:02d} - {video_title}\n'
+                    m3u_content += f'#EXTGRP:{group_name}\n'
+                    m3u_content += f'{stream_url}\n'
                     
                     episode_num += 1
             
@@ -103,4 +101,4 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
 with open("tonguc_egitim.m3u", "w", encoding="utf-8") as f:
     f.write(m3u_content)
 
-print(f"[DONE] 'tonguc_egitim.m3u' updated for {TARGET_YEAR}!")
+print(f"[DONE] 'tonguc_egitim.m3u' updated successfully!")
