@@ -32,7 +32,6 @@ ydl_opts = {
 }
 
 def process_playlist(pl, category_id, category_name, ydl):
-    """Tek bir oynatma listesini çeken fonksiyon"""
     if not pl:
         return None
     
@@ -112,7 +111,6 @@ def main():
             raw_playlists = ch_info.get('entries', [])
             print(f"  [INFO] {ch['name']} için {len(raw_playlists)} oynatma listesi bulundu. Paralel çekiliyor...")
 
-            # Oynatma listelerini 8 eşzamanlı iş parçacığı (thread) ile çek
             with ThreadPoolExecutor(max_workers=8) as executor:
                 futures = [
                     executor.submit(process_playlist, pl, ch["category_id"], ch["name"], ydl)
@@ -128,13 +126,12 @@ def main():
 
     output_data["series"] = all_series
 
+    # 1. JSON Çıktısı Yaz
     os.makedirs("data", exist_ok=True)
     with open("data/data.json", "w", encoding="utf-8") as f:
         json.dump(output_data, f, ensure_ascii=False, indent=2)
 
-    print(f"[DONE] Toplam {len(all_series)} Seri Başarıyla Kaydedildi!")
-
-    # M3U Dosyasını da Yerel Olarak Oluştur
+    # 2. M3U Çıktısı Yaz
     m3u_content = '#EXTM3U x-tvg-url="" tvg-type="series"\n'
     for s in all_series:
         for ep in s["episodes"]:
@@ -144,15 +141,15 @@ def main():
                 f'series-name="{s["name"]}" '
                 f'tvg-name="{s["name"]}" '
                 f'season="1" episode="{ep["episode_num"]}" '
-                f'cmd="series" tvg-type="series",S01E{String(ep["episode_num"]).zfill(2)} - {ep["title"]}\n'
+                f'cmd="series" tvg-type="series",S01E{ep["episode_num"]:02d} - {ep["title"]}\n'
             )
             m3u_content += f'#EXTGRP:{s["category_name"]}\n'
             m3u_content += f'{ep["url"]}\n'
 
     with open("playlist.m3u", "w", encoding="utf-8") as f:
         f.write(m3u_content)
-    print("[DONE] playlist.m3u dosyası da oluşturuldu!")
 
+    print(f"[DONE] Toplam {len(all_series)} Seri Kaydedildi! (data.json & playlist.m3u)")
 
 if __name__ == "__main__":
     main()
