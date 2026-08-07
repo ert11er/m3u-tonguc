@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/player_api.php", "destination": "/api/player_api" },
-    { "source": "/playlist.m3u", "destination": "/api/playlist_m3u" }
+    { "source": "/playlist.m3u", "destination": "/api/playlist_m3u" },
+    { "source": "/series/:user/:pass/:stream_id", "destination": "/api/stream?stream_id=:stream_id" }
   ]
 }
