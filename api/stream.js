@@ -17,7 +17,7 @@ export default async function handler(req, res) {
     streamId = streamId.join('/');
   }
 
-  // Uzantıyı temizle (.mp4, .ts)
+  // Uzantıyı temizle (.mp4, .ts vs.)
   const targetId = streamId.replace(/\.[^/.]+$/, "");
 
   try {
@@ -45,36 +45,44 @@ export default async function handler(req, res) {
 
     const videoUrl = `https://www.youtube.com/watch?v=${ytVideoId}`;
 
-    // Cobalt v11 API istek adresi
-    const cobaltUrl = 'https://api.cobalt.liubquanti.click';
+    // En kaliteli & aktif Cobalt Instance Havuzu (Sırayla dener)
+    const cobaltInstances = [
+      'https://bergung.hoffnungfuerdiezukunft.net',
+      'https://cobalt.canine.tools',
+      'https://cobalt.clxxped.lol',
+      'https://cobalt.liubquanti.click'
+    ];
 
-    const cobaltRes = await fetch(cobaltUrl, {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'
-      },
-      body: JSON.stringify({
-        url: videoUrl,
-        videoQuality: '720'
-      })
-    });
+    for (const instance of cobaltInstances) {
+      try {
+        const response = await fetch(instance, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            url: videoUrl,
+            videoQuality: '720'
+          }),
+          signal: AbortSignal.timeout(4000) // 4 saniye zaman aşımı
+        });
 
-    if (cobaltRes.ok) {
-      const cobaltData = await cobaltRes.json();
+        if (response.ok) {
+          const data = await response.json();
+          const directStreamUrl = data.url || data.picker?.[0]?.url;
 
-      // v11 yanıt formatı kontrolü
-      const streamUrl = cobaltData.url || cobaltData.picker?.[0]?.url;
-
-      if (streamUrl) {
-        return res.redirect(302, streamUrl);
+          if (directStreamUrl) {
+            return res.redirect(302, directStreamUrl);
+          }
+        }
+      } catch (e) {
+        // Sunucu yanıt vermezse veya zaman aşıma uğrarsa bir sonrakine geç
+        continue;
       }
     }
 
-    const errText = await cobaltRes.text();
-    console.error("Cobalt Error Response:", errText);
-    return res.status(500).send("Cobalt Stream Error: " + errText);
+    return res.status(500).send("All Cobalt stream instances failed to extract video.");
 
   } catch (error) {
     return res.status(500).send("Server Error: " + error.message);
