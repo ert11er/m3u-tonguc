@@ -2,7 +2,6 @@ import fs from 'fs';
 import path from 'path';
 
 export default function handler(req, res) {
-  // Extract stream_id from query or fallback to URL parsing
   let streamId = req.query.stream_id;
 
   if (!streamId && req.url) {
@@ -14,12 +13,11 @@ export default function handler(req, res) {
     return res.status(400).send("Missing stream ID");
   }
 
-  // Handle array if Vercel passes multiple segments
   if (Array.isArray(streamId)) {
     streamId = streamId.join('/');
   }
 
-  // Remove file extension (.mp4, .ts, etc.)
+  // Remove extension (.mp4, .ts)
   const targetId = streamId.replace(/\.[^/.]+$/, "");
 
   try {
@@ -31,7 +29,6 @@ export default function handler(req, res) {
 
     const fileData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
-    // Search for episode across all series
     let targetUrl = null;
 
     for (const series of fileData.series || []) {
@@ -46,7 +43,19 @@ export default function handler(req, res) {
       return res.status(404).send(`Episode not found for ID: ${targetId}`);
     }
 
-    // Redirect player directly to video stream URL
+    // Extract raw YouTube Video ID from Invidious URL (e.g., id=p3vZpNjsibA)
+    const ytMatch = targetUrl.match(/[?&]id=([^&]+)/);
+    
+    if (ytMatch && ytMatch[1]) {
+      const ytVideoId = ytMatch[1];
+      
+      // Redirect to a working Invidious/Cobalt/Piped video stream instance
+      // Cobalt / Invidious alternative endpoint:
+      const streamDirectUrl = `https://inv.tux.im/latest_version?id=${ytVideoId}&itag=22`;
+      return res.redirect(302, streamDirectUrl);
+    }
+
+    // Fallback redirect to original URL
     return res.redirect(302, targetUrl);
 
   } catch (error) {
