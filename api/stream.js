@@ -51,8 +51,8 @@ export default function handler(req, res) {
     }
 
     if (ytVideoId) {
-      // Direct stream URL using active, high-uptime Invidious instance
-      const streamDirectUrl = `https://invidious.flokinet.to/latest_version?id=${ytVideoId}&itag=22`;
+      // Stream using active inv.nadeko.net instance
+      const streamDirectUrl = `https://inv.nadeko.net/latest_version?id=${ytVideoId}&itag=22`;
       return res.redirect(302, streamDirectUrl);
     }
 
