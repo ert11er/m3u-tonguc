@@ -1,7 +1,7 @@
 from datetime import datetime
 import yt_dlp
 
-# Automatically uses current year (e.g. 2026)
+# Otomatik yıl alma (2026)
 TARGET_YEAR = str(datetime.now().year)
 
 channels = [
@@ -18,9 +18,9 @@ channels = [
     {"name": "11. Sınıf", "id": "UCiuFKj-SmFf8M4m1ybbftCw"}
 ]
 
-# Standard M3U header declaring VOD support
-m3u_content = '#EXTM3U x-tvg-url="" tvg-type="vod"\n'
+m3u_content = '#EXTM3U x-tvg-url="" tvg-type="tvshow"\n'
 
+# yt-dlp Türkçe zorlama konfigürasyonu
 ydl_opts = {
     'extract_flat': 'in_playlist',
     'skip_download': True,
@@ -29,24 +29,25 @@ ydl_opts = {
     'ignoreerrors': True,
     'retries': 3,
     'hl': 'tr',
-    'gl': 'tr',
+    'gl': 'TR',
+    'geo_bypass': True,
     'http_headers': {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-        'Accept-Language': 'tr-TR,tr;q=0.9',
+        'Accept-Language': 'tr-TR,tr;q=0.9,en-US;q=0.8',
+        'Cookie': 'PREF=hl=tr&gl=TR;'
     }
 }
 
-print(f"[INFO] Target Year Filter: {TARGET_YEAR}")
+print(f"[BİLGİ] Hedef Yıl Filtresi: {TARGET_YEAR}")
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     for channel in channels:
-        print(f"[PROCESSING] Scanning channel: {channel['name']}...")
+        print(f"[İŞLEM] {channel['name']} taranıyor...")
         try:
-            target_url = f"https://www.youtube.com/channel/{channel['id']}/playlists?hl=tr&gl=tr"
+            target_url = f"https://www.youtube.com/channel/{channel['id']}/playlists?hl=tr&gl=TR"
             channel_info = ydl.extract_info(target_url, download=False)
             
             if not channel_info or 'entries' not in channel_info:
-                print(f" -> [WARNING] Could not resolve channel structure for {channel['name']}.")
                 continue
                 
             playlist_count = 0
@@ -55,64 +56,72 @@ with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     continue
                     
                 playlist_id = playlist_entry.get('id')
-                playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'")
+                playlist_title = playlist_entry.get('title', 'Oynatma Listesi').replace('"', "'").replace(',', '')
                 
-                # Filter by year
+                # Sadece hedef yılı içeren listeleri alma
                 if TARGET_YEAR not in playlist_title:
                     continue
                 
                 if not playlist_id:
                     continue
                     
-                print(f"   -> Playlist Found ({TARGET_YEAR}): {playlist_title}")
+                print(f"   -> Oynatma Listesi Keşfedildi: {playlist_title}")
                 playlist_count += 1
                 
-                playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}&hl=tr&gl=tr"
+                playlist_url = f"https://www.youtube.com/playlist?list={playlist_id}&hl=tr&gl=TR"
                 playlist_info = ydl.extract_info(playlist_url, download=False)
                 
                 if not playlist_info or 'entries' not in playlist_info:
                     continue
                     
+                # İlk videonun görselini dizinin kapak resmi yap
+                first_video_id = ""
+                for v in playlist_info['entries']:
+                    if v and v.get('id'):
+                        first_video_id = v.get('id')
+                        break
+                
+                poster_url = f"https://i.ytimg.com/vi/{first_video_id}/maxresdefault.jpg" if first_video_id else ""
+
                 episode_num = 1
                 for video_entry in playlist_info['entries']:
                     if not video_entry:
                         continue
                     
                     video_id = video_entry.get('id')
-                    video_title = video_entry.get('title', 'Ders Videosu').replace('"', "'")
+                    video_title = video_entry.get('title', 'Ders Videosu').replace('"', "'").replace(',', '')
                     
                     if not video_id:
                         continue
                         
-                    logo = f'tvg-logo="https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg"'
-                    
-                    # Category naming: "Grade Level / Course Name"
-                    category_name = f"{channel['name']} - {playlist_title}"
-                    
-                    # Direct stream URL for M3U compatibility
                     stream_url = f"https://invidious.nerdvpn.de/latest_version?id={video_id}&itag=22"
                     
-                    # Universal TV Show / VOD Metadata Format:
-                    # - group-title and #EXTGRP for categorization
-                    # - series-name, season, episode for TV series grouping
-                    # - S01E0X prefix in the title for regex-based parsers
+                    # DIZILER (SERIES) FORMATI:
+                    # group-title = Kategori (Örn: 10. Sınıf)
+                    # series-name = Dizi Adı (Örn: 10. Sınıf Coğrafya 1. Dönem)
+                    # season & episode = Bölüm yapılandırması
+                    # Kart başlığına S01E01 koymuyoruz ki dizi adı sanmasın!
+                    
                     m3u_content += (
-                        f'#EXTINF:-1 {logo} group-title="{category_name}" '
-                        f'series-name="{playlist_title}" season="1" episode="{episode_num}" '
-                        f'tvg-type="tvshow",S01E{episode_num:02d} - {video_title}\n'
+                        f'#EXTINF:-1 tvg-logo="{poster_url}" '
+                        f'group-title="{channel["name"]}" '
+                        f'series-name="{playlist_title}" '
+                        f'tvg-name="{playlist_title}" '
+                        f'season="1" episode="{episode_num}" '
+                        f'tvg-type="tvshow",{video_title}\n'
                     )
-                    m3u_content += f'#EXTGRP:{category_name}\n'
+                    m3u_content += f'#EXTGRP:{channel["name"]}\n'
                     m3u_content += f'{stream_url}\n'
                     
                     episode_num += 1
             
-            print(f"[SUCCESS] Added {playlist_count} playlists for {channel['name']}.")
+            print(f"[BAŞARI] {channel['name']} için {playlist_count} adet Dizi eklendi.")
                     
         except Exception as e:
-            print(f"[ERROR] Unexpected error: {str(e)}")
+            print(f"[HATA] Beklenmedik hata: {str(e)}")
             continue
 
 with open("tonguc_egitim.m3u", "w", encoding="utf-8") as f:
     f.write(m3u_content)
 
-print(f"[DONE] 'tonguc_egitim.m3u' updated successfully!")
+print("[BİTTİ] 'tonguc_egitim.m3u' güncellendi!")
