@@ -124,6 +124,7 @@ export default async function handler(req, res) {
     // 3. ÖNCELİK: Invidious / Piped Sunucuları (yt-dlp Tabanlı)
     // =============================================================
     const invidiousEndpoints = [
+      `https://piped.video/latest_version?id=${ytVideoId}&itag=22`,
       `https://inv.nadeko.net/latest_version?id=${ytVideoId}&itag=22`,
       `https://invidious.nerdvpn.de/latest_version?id=${ytVideoId}&itag=22`,
       `https://yt.drgnz.club/latest_version?id=${ytVideoId}&itag=22`,
