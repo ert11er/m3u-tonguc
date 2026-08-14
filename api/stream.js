@@ -121,7 +121,45 @@ export default async function handler(req, res) {
     }
 
     // =============================================================
-    // 3. ÖNCELİK: Invidious / Piped Sunucuları (yt-dlp Tabanlı)
+    // 3. ÖNCELİK: Piped MP4 API (prioritized)
+    // =============================================================
+    try {
+      const pipedUrl = `https://piped.video/streams/${ytVideoId}`;
+      const pipedRes = await fetch(pipedUrl, {
+        signal: AbortSignal.timeout(4000),
+        headers: { 'User-Agent': 'Mozilla/5.0' }
+      });
+
+      if (pipedRes.ok) {
+        const pipedData = await pipedRes.json();
+        const streams = pipedData?.videoStreams || pipedData?.streams || [];
+
+        // Prefer an MP4 video stream if available
+        let streamObj = streams.find(s => (s.mimeType || '').includes('mp4') || (s.format || '').toUpperCase().includes('MPEG_4'));
+        if (!streamObj && streams.length) streamObj = streams[0];
+
+        const directUrl = streamObj?.url;
+        if (directUrl) {
+          const mediaRes = await fetch(directUrl, { signal: AbortSignal.timeout(5000) });
+          if (mediaRes.ok) {
+            res.setHeader('Content-Type', mediaRes.headers.get('content-type') || 'video/mp4');
+            if (mediaRes.headers.get('content-length')) {
+              res.setHeader('Content-Length', mediaRes.headers.get('content-length'));
+            }
+            res.setHeader('Accept-Ranges', 'bytes');
+            res.status(200);
+
+            const arrayBuffer = await mediaRes.arrayBuffer();
+            return res.send(Buffer.from(arrayBuffer));
+          }
+        }
+      }
+    } catch (e) {
+      // piped.video failed or timed out; continue to other endpoints
+    }
+
+    // =============================================================
+    // 4. ÖNCELİK: Invidious / Piped Sunucuları (yt-dlp Tabanlı)
     // =============================================================
     const invidiousEndpoints = [
       `https://piped.video/latest_version?id=${ytVideoId}&itag=22`,
@@ -157,7 +195,7 @@ export default async function handler(req, res) {
     }
 
     // =============================================================
-    // 4. ÖNCELİK: YouTube No-Cookie Embed (WebView Fallback)
+    // 5. ÖNCELİK: YouTube No-Cookie Embed (WebView Fallback)
     // =============================================================
     const embedUrl = `https://www.youtube-nocookie.com/embed/${ytVideoId}?autoplay=1&modestbranding=1&rel=0&enablejsapi=1`;
     return res.redirect(302, embedUrl);
